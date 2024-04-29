@@ -1,10 +1,17 @@
+"use client";
 import React from "react";
-import { Typography, Box, Stack } from "@mui/material";
+import { Typography, Box, Stack, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import logo from "../../../public/logo.jpeg";
 import styles from "./styles.module.css";
+import theme from "@/app/theme";
+import MobileHeader from "./mobileHeader";
 const Header = () => {
-  return (
+  const isTab = useMediaQuery(theme.breakpoints.down("md"));
+
+  return isTab ? (
+    <MobileHeader />
+  ) : (
     <div className={styles.main}>
       <Stack
         direction={"row"}
