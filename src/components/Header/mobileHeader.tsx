@@ -40,15 +40,12 @@ const MobileHeader = () => {
           onClick={() => setOpen(false)}
         />
       </Stack>
-
       <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>Home</p>
+      <p className={styles.drawerLink}>About</p>
+      <p className={styles.drawerLink}>Course</p>
+      <p className={styles.drawerLink}>Testimonials</p>
+      <p className={styles.drawerLink}>FAQ</p>
+      <p className={styles.drawerLink}>Contact</p>
     </Box>
   );
   return (

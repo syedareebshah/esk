@@ -70,7 +70,8 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                380 Flair Dr, Suite 227 EL Monte, 91731 California USA
+                18530 Ogden Street NW, Elk River, MN 55330 Minnesota,
+                Minneapolis
               </Typography>
             </Stack>
             <Stack direction={"row"} justifyContent={"start"}>
@@ -87,7 +88,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                Office +1 323 419 5839
+                Office +0 000 000 0000
               </Typography>
             </Stack>
             <Stack direction={"row"} justifyContent={"start"}>
@@ -104,7 +105,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                Mobile and Whatsapp +1 626 747 5906
+                Mobile and Whatsapp +0 000 000 0000
               </Typography>
             </Stack>
             <Stack direction={"row"} justifyContent={"start"}>
@@ -121,7 +122,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                info@everestitt.com
+                eskitt@outlook.com
               </Typography>
             </Stack>
           </Grid>
@@ -231,7 +232,7 @@ const Footer = () => {
             textAlign: "center",
           }}
         >
-          All rights reserved by ESK IT Training © 2024 | Designed By BeeraTech
+          All rights reserved by ESK IT Training © 2020 | Designed By BeeraTech
         </Typography>
       </Box>
     </>

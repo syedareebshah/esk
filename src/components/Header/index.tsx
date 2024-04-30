@@ -40,10 +40,10 @@ const Header = () => {
         >
           <p className={styles.headerText}>Home</p>
           <p className={styles.headerText}>About</p>
-          <p className={styles.headerText}>Mission</p>
-          <p className={styles.headerText}>Mission</p>
-          <p className={styles.headerText}>Mission</p>
-          <p className={styles.headerText}>Mission</p>
+          <p className={styles.headerText}>Course</p>
+          <p className={styles.headerText}>Testimonials</p>
+          <p className={styles.headerText}>FAQ</p>
+          <p className={styles.headerText}>Contact</p>
         </Stack>
       </Stack>
     </div>
