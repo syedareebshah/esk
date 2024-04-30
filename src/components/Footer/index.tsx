@@ -122,7 +122,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                eskitt@outlook.com
+                eskit_t@outlook.com
               </Typography>
             </Stack>
           </Grid>

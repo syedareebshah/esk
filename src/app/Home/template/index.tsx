@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Grid, Typography } from "@mui/material";
+import styles from "./styles.module.css";
 
 type Props = {};
 
@@ -7,16 +8,22 @@ const HomePage = (props: Props) => {
   return (
     <Box
       sx={{
-        height: "80vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        textAlign: "center",
+        maxWidth: "1135px",
+        margin: "0 auto",
+        paddingLeft: "30px",
+        paddingRight: "30px",
       }}
     >
-      <h1>ESK Landing website under development</h1>
-      <h3>Currently its in design phase, real data will be added soon...</h3>
-      <h3>Stay tuned...</h3>
+      <Grid container>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <h1 className={styles.headingTxtOne}>Become an</h1>
+          <h1 className={styles.headingTxtTwo}>IT Professional</h1>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <h1 className={styles.headingTxtOne}>Become an</h1>
+          <h1 className={styles.headingTxtTwo}>IT Professional</h1>
+        </Grid>
+      </Grid>
     </Box>
   );
 };

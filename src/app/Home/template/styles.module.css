@@ -1,0 +1,17 @@
+.headingTxtOne {
+  font-size: 3rem;
+  color: #474747;
+  font-weight: 600;
+}
+.headingTxtTwo {
+  font-size: 3rem;
+  color: blue;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .headingTxtOne,
+  .headingTxtTwo {
+    font-size: 1.6rem;
+  }
+}
