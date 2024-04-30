@@ -1,0 +1,27 @@
+.navText {
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  position: relative; /* Needed for the underline animation */
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+.navText::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjust this value to control the distance of the underline from text */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust this value to control the thickness of the underline */
+  background-color: red;
+  transition: width 1s ease; /* Control the speed of the underline animation */
+}
+
+.navText:hover {
+  color: red;
+}
+
+.navText:hover::after {
+  width: 100%;
+}
