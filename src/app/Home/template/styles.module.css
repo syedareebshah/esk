@@ -8,7 +8,52 @@
   color: blue;
   font-weight: 600;
 }
+.longHeading {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 25px 0px;
+}
+.worksHeading {
+  font-size: 35px;
+}
+.worksSubHeading {
+  font-size: 20px;
+  margin-top: 20px;
 
+  margin-bottom: 60px;
+}
+.cardHeading {
+  font-size: 22px;
+  font-weight: 900 !important;
+}
+.card {
+  padding: 60px 20px;
+  border: 2px solid #d6dee4;
+  border-radius: 16px;
+  position: relative;
+  height: 100%;
+}
+.count {
+  font-size: 35px;
+  color: white;
+}
+.floatingDiv {
+  background-color: #f26323;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px; /* Adjust this value to fine-tune the positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img {
+  max-width: 80px;
+  height: auto;
+}
 @media screen and (max-width: 600px) {
   .headingTxtOne,
   .headingTxtTwo {
@@ -19,4 +64,8 @@
 .list {
   margin-left: 50px;
   margin-top: 10px;
+}
+.boldTxt {
+  font-weight: 900;
+  padding: 10px 0px;
 }
