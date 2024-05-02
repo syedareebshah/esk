@@ -45,7 +45,7 @@ const HomePage = (props: Props) => {
       sx={{
         maxWidth: "1200px",
         margin: "0 auto",
-        paddingTop: "35px",
+        paddingTop: "130px",
         paddingBottom: "35px",
         paddingLeft: "30px",
         paddingRight: "30px",
@@ -59,6 +59,7 @@ const HomePage = (props: Props) => {
             sx={{
               fontSize: "16px",
               color: "#3a3838",
+              lineHeight: "1.7",
             }}
           >
             No IT background or college degree required, change your career
@@ -69,6 +70,7 @@ const HomePage = (props: Props) => {
             sx={{
               fontSize: "16px",
               color: "#3a3838",
+              lineHeight: "1.7",
             }}
           >
             These jobs are available everywhere.
@@ -76,19 +78,39 @@ const HomePage = (props: Props) => {
 
           <ul className={styles.list}>
             <li>
-              <Typography>IT Support Specialist</Typography>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                IT Support Specialist
+              </Typography>
             </li>
             <li>
-              <Typography>IT Helpdesk Support</Typography>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                IT Helpdesk Support
+              </Typography>
             </li>
             <li>
-              <Typography>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
                 Cyber Security Specialist Desktop Support Specialist Cloud
                 Support
               </Typography>
             </li>
             <li>
-              <Typography>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
                 Specialist Network Support Specialist and much more
               </Typography>
             </li>
@@ -103,9 +125,7 @@ const HomePage = (props: Props) => {
                     ...divStyle,
                     backgroundImage: `url(${slideImage.url})`,
                   }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
+                ></div>
               </div>
             ))}
           </Slide>
@@ -114,7 +134,11 @@ const HomePage = (props: Props) => {
           <h4 className={styles.boldTxt}>
             Technologies you will learn in our hands-on class are as follows:
           </h4>
-          <Typography>
+          <Typography
+            sx={{
+              lineHeight: "1.7",
+            }}
+          >
             In the realm of Data Center networking, consider mastering
             technologies such as Cisco's Application Centric Infrastructure
             (ACI) or VMware's NSX for network virtualization and
@@ -135,7 +159,12 @@ const HomePage = (props: Props) => {
             protocols like SSL/TLS for encryption and IPSec for VPNs, ensuring
             comprehensive network security across diverse environments.
           </Typography>
-          <Typography paddingTop={1}>
+          <Typography
+            sx={{
+              lineHeight: "1.7",
+            }}
+            paddingTop={1}
+          >
             Are you interested in an IT Networking, Cloud, Support Specialist,
             Cyber Security career? Whether you're a computer science graduate,
             high school diploma holder, looking to change careers, or seeking a
@@ -159,7 +188,11 @@ const HomePage = (props: Props) => {
               border: "3px solid black",
             }}
           >
-            <Typography>
+            <Typography
+              sx={{
+                lineHeight: "1.7",
+              }}
+            >
               Please be aware that we solely offer IT knowledge. We are not an
               Accredited College or Institute, and therefore, we do not confer
               diplomas or certificates. If you are interested in obtaining
@@ -194,7 +227,12 @@ const HomePage = (props: Props) => {
                   <h1 className={styles.count}>1</h1>
                 </div>
                 <h2 className={styles.cardHeading}>Take Class with us</h2>
-                <Typography marginTop={2}>
+                <Typography
+                  sx={{
+                    lineHeight: "1.7",
+                  }}
+                  marginTop={2}
+                >
                   100% online or classroom. Attend class on Sundays and the rest
                   of the week learn on your schedule.
                 </Typography>
