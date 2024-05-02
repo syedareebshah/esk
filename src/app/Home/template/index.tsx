@@ -1,12 +1,17 @@
 "use client";
 import React from "react";
-import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import styles from "./styles.module.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import arrow from "../../../../public/arrow.png";
 import Image from "next/image";
 import theme from "@/app/theme";
+import delLogo from "../../../../public/dell.png";
+import ciscoLogo from "../../../../public/cisco.png";
+import lenovoLogo from "../../../../public/lenovo.png";
+import microsoftLogo from "../../../../public/microsoft.png";
+import sonicaLogo from "../../../../public/sonica.png";
 
 type Props = {};
 const spanStyle = {
@@ -74,6 +79,8 @@ const slideText = [
 
 const HomePage = (props: Props) => {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
+  const isBelowLg = useMediaQuery(theme.breakpoints.down("lg"));
+  const isBelowSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -118,7 +125,7 @@ const HomePage = (props: Props) => {
                   lineHeight: "1.7",
                 }}
               >
-                IT Support Specialist
+                Network Administrator
               </Typography>
             </li>
             <li>
@@ -127,7 +134,7 @@ const HomePage = (props: Props) => {
                   lineHeight: "1.7",
                 }}
               >
-                IT Helpdesk Support
+                Network Engineer
               </Typography>
             </li>
             <li>
@@ -136,8 +143,7 @@ const HomePage = (props: Props) => {
                   lineHeight: "1.7",
                 }}
               >
-                Cyber Security Specialist Desktop Support Specialist Cloud
-                Support
+                Network Architect
               </Typography>
             </li>
             <li>
@@ -146,7 +152,25 @@ const HomePage = (props: Props) => {
                   lineHeight: "1.7",
                 }}
               >
-                Specialist Network Support Specialist and much more
+                Network Security Engineer
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Wireless Engineer
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Operations Center (NOC) and much more...
               </Typography>
             </li>
           </ul>
@@ -428,6 +452,75 @@ const HomePage = (props: Props) => {
               </div>
             ))}
           </Slide>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Stack
+            paddingTop={5}
+            direction={"row"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+          >
+            <a href="https://www.microsoft.com/en-us/" target="blank">
+              <Image
+                alt="logo"
+                src={microsoftLogo}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+            <a href="https://www.sonicwall.com/" target="blank">
+              <Image
+                alt="logo"
+                src={sonicaLogo}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+            {!isBelowSm && (
+              <a href="https://www.cisco.com/" target="blank">
+                <Image
+                  alt="logo"
+                  src={ciscoLogo}
+                  style={{
+                    width: "auto",
+                    height: "40px",
+                  }}
+                />
+              </a>
+            )}
+            {!isBelowSm && (
+              <a href="https://www.lenovo.com/us/en/" target="blank">
+                <Image
+                  alt="logo"
+                  src={lenovoLogo}
+                  style={{
+                    maxWidth: "140px",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+            )}
+            {!isTab && (
+              <a href="https://www.dell.com/" target="blank">
+                <Image
+                  alt="logo"
+                  src={delLogo}
+                  style={{
+                    maxWidth: "140px",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+            )}
+          </Stack>
         </Grid>
       </Grid>
     </Box>
