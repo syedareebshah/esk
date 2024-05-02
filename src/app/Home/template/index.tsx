@@ -1,12 +1,17 @@
 "use client";
 import React from "react";
-import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import styles from "./styles.module.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import arrow from "../../../../public/arrow.png";
 import Image from "next/image";
 import theme from "@/app/theme";
+import delLogo from "../../../../public/dell.png";
+import ciscoLogo from "../../../../public/cisco.png";
+import lenovoLogo from "../../../../public/lenovo.png";
+import microsoftLogo from "../../../../public/microsoft.png";
+import sonicaLogo from "../../../../public/sonica.png";
 
 type Props = {};
 const spanStyle = {
@@ -22,6 +27,14 @@ const divStyle = {
   backgroundSize: "cover",
   height: "300px",
 };
+const txtDivStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  maxWidth: "900px",
+  margin: "0 auto",
+  paddingTop: "20px",
+};
 const slideImages = [
   {
     url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
@@ -36,16 +49,45 @@ const slideImages = [
     caption: "Slide 3",
   },
 ];
+const slideText = [
+  {
+    txt: "Enrolling in Cisco CCNA and CCNP trainings at ESK IT Trainings was an absolute game-changer for me. The instructors' expertise and hands-on approach made complex networking concepts easy to grasp, while the well-structured curriculum ensured a comprehensive understanding of Cisco technologies. The practical labs provided invaluable real-world experience, preparing me not just for certification exams but also for the demands of the industry. Thanks to ESK IT Trainings, I not only achieved my certifications but also gained the confidence to excel in my networking career. I highly recommend ESK IT Trainings to anyone serious about advancing their skills in the IT networking field.",
+    name: "Edwin Suah",
+    city: "Minneapolis",
+  },
+  {
+    txt: "ESK IT Trainings offered an exceptional learning experience in both Cisco and multi-vendor security domains. The knowledgeable instructors provided practical insights, empowering me to grasp complex concepts effectively. I highly recommend ESK IT Trainings to anyone seeking comprehensive training in IT security.",
+    name: "Elvis S.",
+    city: "Minneapolis",
+  },
+  {
+    txt: "ESK IT Trainings delivered impeccable Linux and AWS instruction, exceeding my expectations. The expert trainers provided thorough guidance, enabling me to master both platforms with ease. I highly recommend ESK IT Trainings for anyone seeking top-notch Linux and AWS education.",
+    name: "Fallah Gibson",
+    city: "Minneapolis",
+  },
+  {
+    txt: "I was trying to find a better institute for enhancing my Data Centers skills and I got to know about ESK IT Trainings Embarking on ESK IT Trainings Data Center Design and Expert Routing courses was a revelation. Their dynamic approach and industry-leading content elevated my expertise, making it a must-try for those serious about mastering these disciplines.",
+    name: "Geoffrey Wilson",
+    city: "Minneapolis",
+  },
+  {
+    txt: "Thanks to ESK IT Trainings' CCNP ENARSI, SD-WAN, and SNCF programs, I secured my dream job with confidence. Their comprehensive courses and expert guidance were instrumental in preparing me for success. I wholeheartedly endorse ESK IT Trainings to anyone looking to advance their career in networking.",
+    name: "Nana Bandoh",
+    city: "Minneapolis",
+  },
+];
 
 const HomePage = (props: Props) => {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
+  const isBelowLg = useMediaQuery(theme.breakpoints.down("lg"));
+  const isBelowSm = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
       sx={{
         maxWidth: "1200px",
         margin: "0 auto",
-        paddingTop: "35px",
+        paddingTop: "130px",
         paddingBottom: "35px",
         paddingLeft: "30px",
         paddingRight: "30px",
@@ -59,6 +101,7 @@ const HomePage = (props: Props) => {
             sx={{
               fontSize: "16px",
               color: "#3a3838",
+              lineHeight: "1.7",
             }}
           >
             No IT background or college degree required, change your career
@@ -69,6 +112,7 @@ const HomePage = (props: Props) => {
             sx={{
               fontSize: "16px",
               color: "#3a3838",
+              lineHeight: "1.7",
             }}
           >
             These jobs are available everywhere.
@@ -76,20 +120,57 @@ const HomePage = (props: Props) => {
 
           <ul className={styles.list}>
             <li>
-              <Typography>IT Support Specialist</Typography>
-            </li>
-            <li>
-              <Typography>IT Helpdesk Support</Typography>
-            </li>
-            <li>
-              <Typography>
-                Cyber Security Specialist Desktop Support Specialist Cloud
-                Support
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Administrator
               </Typography>
             </li>
             <li>
-              <Typography>
-                Specialist Network Support Specialist and much more
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Engineer
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Architect
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Security Engineer
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Wireless Engineer
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                sx={{
+                  lineHeight: "1.7",
+                }}
+              >
+                Network Operations Center (NOC) and much more...
               </Typography>
             </li>
           </ul>
@@ -103,9 +184,7 @@ const HomePage = (props: Props) => {
                     ...divStyle,
                     backgroundImage: `url(${slideImage.url})`,
                   }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
+                ></div>
               </div>
             ))}
           </Slide>
@@ -114,7 +193,11 @@ const HomePage = (props: Props) => {
           <h4 className={styles.boldTxt}>
             Technologies you will learn in our hands-on class are as follows:
           </h4>
-          <Typography>
+          <Typography
+            sx={{
+              lineHeight: "1.7",
+            }}
+          >
             In the realm of Data Center networking, consider mastering
             technologies such as Cisco's Application Centric Infrastructure
             (ACI) or VMware's NSX for network virtualization and
@@ -135,7 +218,12 @@ const HomePage = (props: Props) => {
             protocols like SSL/TLS for encryption and IPSec for VPNs, ensuring
             comprehensive network security across diverse environments.
           </Typography>
-          <Typography paddingTop={1}>
+          <Typography
+            sx={{
+              lineHeight: "1.7",
+            }}
+            paddingTop={1}
+          >
             Are you interested in an IT Networking, Cloud, Support Specialist,
             Cyber Security career? Whether you're a computer science graduate,
             high school diploma holder, looking to change careers, or seeking a
@@ -159,7 +247,11 @@ const HomePage = (props: Props) => {
               border: "3px solid black",
             }}
           >
-            <Typography>
+            <Typography
+              sx={{
+                lineHeight: "1.7",
+              }}
+            >
               Please be aware that we solely offer IT knowledge. We are not an
               Accredited College or Institute, and therefore, we do not confer
               diplomas or certificates. If you are interested in obtaining
@@ -194,7 +286,12 @@ const HomePage = (props: Props) => {
                   <h1 className={styles.count}>1</h1>
                 </div>
                 <h2 className={styles.cardHeading}>Take Class with us</h2>
-                <Typography marginTop={2}>
+                <Typography
+                  sx={{
+                    lineHeight: "1.7",
+                  }}
+                  marginTop={2}
+                >
                   100% online or classroom. Attend class on Sundays and the rest
                   of the week learn on your schedule.
                 </Typography>
@@ -234,7 +331,15 @@ const HomePage = (props: Props) => {
                   Take Exam to be certified
                 </h2>
                 <Typography marginTop={2}>
-                  Schedule exam in pearsonvue.com and be certified
+                  Schedule exam in{" "}
+                  <a
+                    className={styles.link}
+                    href="https://home.pearsonvue.com/"
+                    target="blank"
+                  >
+                    pearsonvue.com
+                  </a>{" "}
+                  and be certified
                 </Typography>
               </div>
             </Grid>
@@ -277,6 +382,145 @@ const HomePage = (props: Props) => {
               </div>
             </Grid>
           </Grid>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Typography
+            sx={{
+              fontWeight: "bold",
+              fontSize: "20px",
+              lineHeight: "1.7",
+              color: "#f26323",
+              textAlign: "center",
+            }}
+          >
+            Testimonials
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "bold",
+              fontSize: "35px",
+              lineHeight: "1.7",
+              color: "#3a3838",
+              textAlign: "center",
+              maxWidth: "625px",
+              margin: "0 auto",
+            }}
+          >
+            We have many success stories; here are some we would like to share.
+          </Typography>
+          <Slide arrows={false} indicators={false}>
+            {slideText.map((slide, index) => (
+              <div key={index}>
+                <div
+                  style={{
+                    ...txtDivStyle,
+                  }}
+                >
+                  <Box>
+                    <Typography
+                      sx={{
+                        lineHeight: "1.7",
+                        textAlign: "center",
+                      }}
+                    >
+                      {slide.txt}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        textAlign: "center",
+                        paddingTop: "20px",
+                        fontSize: "20px",
+                        fontWeight: "bold",
+                        color: "#f26323",
+                      }}
+                    >
+                      {slide.name}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        paddingTop: "10px",
+                        textAlign: "center",
+                        fontSize: "18px",
+                        fontWeight: "bold",
+                        color: "#474747",
+                      }}
+                    >
+                      {slide.city}
+                    </Typography>
+                  </Box>
+                </div>
+              </div>
+            ))}
+          </Slide>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Stack
+            paddingTop={5}
+            direction={"row"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+          >
+            <a href="https://www.microsoft.com/en-us/" target="blank">
+              <Image
+                alt="logo"
+                src={microsoftLogo}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+            <a href="https://www.sonicwall.com/" target="blank">
+              <Image
+                alt="logo"
+                src={sonicaLogo}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+            {!isBelowSm && (
+              <a href="https://www.cisco.com/" target="blank">
+                <Image
+                  alt="logo"
+                  src={ciscoLogo}
+                  style={{
+                    width: "auto",
+                    height: "40px",
+                  }}
+                />
+              </a>
+            )}
+            {!isBelowSm && (
+              <a href="https://www.lenovo.com/us/en/" target="blank">
+                <Image
+                  alt="logo"
+                  src={lenovoLogo}
+                  style={{
+                    maxWidth: "140px",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+            )}
+            {!isTab && (
+              <a href="https://www.dell.com/" target="blank">
+                <Image
+                  alt="logo"
+                  src={delLogo}
+                  style={{
+                    maxWidth: "140px",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </a>
+            )}
+          </Stack>
         </Grid>
       </Grid>
     </Box>

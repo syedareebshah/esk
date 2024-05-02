@@ -6,6 +6,7 @@ import logo from "../../../public/logo.jpeg";
 import styles from "./styles.module.css";
 import theme from "@/app/theme";
 import MobileHeader from "./mobileHeader";
+import Link from "next/link";
 const Header = () => {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -22,15 +23,17 @@ const Header = () => {
           margin: "0 auto",
         }}
       >
-        <Image
-          alt="Mountains"
-          src={logo}
-          style={{
-            maxWidth: "185px",
-            width: "100%",
-            height: "auto",
-          }}
-        />
+        <Link href={"/"}>
+          <Image
+            alt="Mountains"
+            src={logo}
+            style={{
+              width: "auto",
+              height: "70px",
+              marginLeft: "-10px",
+            }}
+          />
+        </Link>
         <Stack
           sx={{
             width: "50%",
