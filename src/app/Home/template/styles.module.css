@@ -80,3 +80,10 @@
   padding: 10px 0px;
   line-height: 1.5;
 }
+.link {
+  text-decoration: none;
+  color: #f26323;
+}
+.link:hover {
+  color: blue;
+}
