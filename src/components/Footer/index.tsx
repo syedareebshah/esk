@@ -8,11 +8,102 @@ import styles from "./styles.module.css";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import theme from "@/app/theme";
+import Image from "next/image";
+import delLogo from "../../../public/dell.png";
+import ciscoLogo from "../../../public/cisco.png";
+import juniper from "../../../public/juniper.png";
+import microsoftLogo from "../../../public/microsoft.png";
+import sonicaLogo from "../../../public/sonica.png";
+import fortinet from "../../../public/fortinet.png";
+
 const Footer = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log({ isMobile });
+  const isBelowSm = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTab = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <>
+      <Grid
+        sx={{
+          maxWidth: "1120px",
+          margin: "0 auto",
+          padding: "20px 50px",
+        }}
+        item
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+        xl={12}
+      >
+        <Stack
+          paddingTop={5}
+          direction={"row"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
+          <a href="https://www.microsoft.com/en-us/" target="blank">
+            <Image
+              alt="logo"
+              src={microsoftLogo}
+              style={{
+                maxWidth: "140px",
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </a>
+          <a href="https://www.sonicwall.com/" target="blank">
+            <Image
+              alt="logo"
+              src={sonicaLogo}
+              style={{
+                maxWidth: "140px",
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </a>
+          {!isBelowSm && (
+            <a href="https://www.cisco.com/" target="blank">
+              <Image
+                alt="logo"
+                src={ciscoLogo}
+                style={{
+                  width: "auto",
+                  height: "40px",
+                }}
+              />
+            </a>
+          )}
+          {!isBelowSm && (
+            <a href="https://juniper.net" target="blank">
+              <Image
+                alt="logo"
+                src={juniper}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+          )}
+          {!isTab && (
+            <a href="https://www.fortinet.com/" target="blank">
+              <Image
+                alt="logo"
+                src={fortinet}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+          )}
+        </Stack>
+      </Grid>
       <Box
         sx={{
           backgroundColor: "#0c365d",

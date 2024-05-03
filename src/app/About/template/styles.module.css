@@ -1,0 +1,97 @@
+.imgContainer {
+  background-image: url(../../../../public/datacenter.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  height: 540px;
+}
+.aboutHeaderTxtContainer {
+  max-width: 570px;
+
+  position: relative;
+  left: 139px;
+  top: -20px;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media screen and (max-width: 1200px) {
+  .aboutHeaderTxtContainer {
+    left: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutHeaderTxtContainer {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aboutHeaderTxtContainer {
+    max-width: 320px;
+    left: 0px;
+    top: -20px;
+    margin: 0px auto;
+  }
+  .imgContainer {
+    height: 100%;
+  }
+}
+.worksHeading {
+  font-size: 35px;
+  line-height: 1.7;
+}
+.worksSubHeading {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.7;
+
+  margin-bottom: 60px;
+}
+
+.cardHeading {
+  font-size: 22px;
+  font-weight: 900 !important;
+  line-height: 1.7;
+  text-align: start;
+}
+
+.floatingDiv {
+  background-color: blue;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px; /* Adjust this value to fine-tune the positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.count {
+  font-size: 35px;
+  color: white;
+}
+.cardHeading {
+  font-size: 22px;
+  font-weight: 900 !important;
+  line-height: 1.7;
+}
+.card {
+  padding: 60px 25px;
+  border: 2px solid #d6dee4;
+  border-radius: 16px;
+  position: relative;
+  height: 100%;
+  transition: transform 0.3s ease-in-out; /* Adding transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
