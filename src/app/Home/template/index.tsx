@@ -7,11 +7,6 @@ import "react-slideshow-image/dist/styles.css";
 import arrow from "../../../../public/arrow.png";
 import Image from "next/image";
 import theme from "@/app/theme";
-import delLogo from "../../../../public/dell.png";
-import ciscoLogo from "../../../../public/cisco.png";
-import lenovoLogo from "../../../../public/lenovo.png";
-import microsoftLogo from "../../../../public/microsoft.png";
-import sonicaLogo from "../../../../public/sonica.png";
 
 type Props = {};
 const spanStyle = {
@@ -453,75 +448,6 @@ const HomePage = (props: Props) => {
               </div>
             ))}
           </Slide>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <Stack
-            paddingTop={5}
-            direction={"row"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-          >
-            <a href="https://www.microsoft.com/en-us/" target="blank">
-              <Image
-                alt="logo"
-                src={microsoftLogo}
-                style={{
-                  maxWidth: "140px",
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-            </a>
-            <a href="https://www.sonicwall.com/" target="blank">
-              <Image
-                alt="logo"
-                src={sonicaLogo}
-                style={{
-                  maxWidth: "140px",
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-            </a>
-            {!isBelowSm && (
-              <a href="https://www.cisco.com/" target="blank">
-                <Image
-                  alt="logo"
-                  src={ciscoLogo}
-                  style={{
-                    width: "auto",
-                    height: "40px",
-                  }}
-                />
-              </a>
-            )}
-            {!isBelowSm && (
-              <a href="https://www.lenovo.com/us/en/" target="blank">
-                <Image
-                  alt="logo"
-                  src={lenovoLogo}
-                  style={{
-                    maxWidth: "140px",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                />
-              </a>
-            )}
-            {!isTab && (
-              <a href="https://www.dell.com/" target="blank">
-                <Image
-                  alt="logo"
-                  src={delLogo}
-                  style={{
-                    maxWidth: "140px",
-                    width: "100%",
-                    height: "auto",
-                  }}
-                />
-              </a>
-            )}
-          </Stack>
         </Grid>
       </Grid>
     </Box>

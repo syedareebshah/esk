@@ -41,8 +41,22 @@ const Header = () => {
           direction={"row"}
           justifyContent={"space-between"}
         >
-          <p className={styles.headerText}>Home</p>
-          <p className={styles.headerText}>About</p>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/"}
+          >
+            <p className={styles.headerText}>Home</p>
+          </Link>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/About"}
+          >
+            <p className={styles.headerText}>About</p>
+          </Link>
           <p className={styles.headerText}>Course</p>
           <p className={styles.headerText}>Testimonials</p>
           <p className={styles.headerText}>FAQ</p>
