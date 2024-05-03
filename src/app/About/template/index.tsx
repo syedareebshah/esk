@@ -1,9 +1,23 @@
-import { Box, Grid, Typography } from "@mui/material";
+"use client";
+import {
+  Box,
+  Button,
+  Grid,
+  Stack,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import styles from "./styles.module.css";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import AccountCircleSharpIcon from "@mui/icons-material/Person2";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
+import Image from "next/image";
+import aboutImage from "../../../../public/aboutImage.jpeg";
+import crew from "../../../../public/crew.jpeg";
+import theme from "@/app/theme";
 export default function AboutPage() {
+  const isTab = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       sx={{
@@ -320,29 +334,112 @@ export default function AboutPage() {
         </Grid>
       </Grid>
       <Grid
-        sx={{
-          backgroundColor: "red",
-        }}
         container
+        spacing={3}
+        sx={{
+          maxWidth: "1120px",
+          margin: "0 auto",
+          padding: "10px",
+        }}
       >
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <Grid
+          sx={{
+            height: "fit-content",
+          }}
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={6}
+          xl={6}
+        >
           <Typography
             sx={{
-              fontSize: { sm: "12px", xs: "14px", md: "20px" },
+              fontSize: "20px",
+              fontWeight: "bold",
+              color: "blue",
             }}
           >
-            Main Office: +0 000 000 0000
+            DISTANCE LEARNING
           </Typography>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <Typography
             sx={{
-              fontSize: { sm: "12px", xs: "14px", md: "20px" },
+              fontSize: "26px",
+              fontWeight: "bold",
+              color: "#3a3838",
             }}
+            paddingTop={2}
+            paddingBottom={2}
           >
-            Main Office: +0 000 000 0000
+            Learn from anywhere virtually or in the classroom
           </Typography>
+          <Typography paddingBottom={2} color={"#3a3838"}>
+            We help students to learn job-specific IT-related roles such as IT
+            Technician or System Administrator. Our syllabus is focused on the
+            latest industry requirements and market demand.
+          </Typography>
+          <Typography paddingBottom={2} color={"#3a3838"}>
+            We help students to learn job-specific IT-related roles such as IT
+            Technician or System Administrator. Our syllabus is focused on the
+            latest industry requirements and market demand.
+          </Typography>
+          <Button variant="contained">Apply Now</Button>
         </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Image
+            src={aboutImage}
+            alt="img"
+            style={{
+              maxWidth: "460px",
+              width: "100%",
+              height: "auto",
+              borderRadius: "16px",
+            }}
+          />
+        </Grid>
+        {!isTab && (
+          <Grid paddingTop={10} paddingBottom={10} container>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+              <Stack
+                direction={"row"}
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                spacing={2}
+              >
+                <Image
+                  src={crew}
+                  alt="img"
+                  style={{
+                    maxWidth: "350px",
+                    width: "100%",
+                    height: "220px",
+                    borderRadius: "16px",
+                  }}
+                />
+                <Image
+                  src={crew}
+                  alt="img"
+                  style={{
+                    maxWidth: "350px",
+                    width: "100%",
+                    height: "220px",
+                    borderRadius: "16px",
+                  }}
+                />
+                <Image
+                  src={crew}
+                  alt="img"
+                  style={{
+                    maxWidth: "350px",
+                    width: "100%",
+                    height: "220px",
+                    borderRadius: "16px",
+                  }}
+                />
+              </Stack>
+            </Grid>
+          </Grid>
+        )}
       </Grid>
     </Box>
   );
