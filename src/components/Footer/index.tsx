@@ -15,6 +15,7 @@ import juniper from "../../../public/juniper.png";
 import microsoftLogo from "../../../public/microsoft.png";
 import sonicaLogo from "../../../public/sonica.png";
 import fortinet from "../../../public/fortinet.png";
+import paloAlto from "../../../public/paloAlto.png";
 
 const Footer = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -94,6 +95,19 @@ const Footer = () => {
               <Image
                 alt="logo"
                 src={fortinet}
+                style={{
+                  maxWidth: "140px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+          )}
+          {!isTab && (
+            <a href="https://www.paloaltonetworks.com/" target="blank">
+              <Image
+                alt="logo"
+                src={paloAlto}
                 style={{
                   maxWidth: "140px",
                   width: "100%",
