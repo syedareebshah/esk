@@ -57,7 +57,14 @@ const Header = () => {
           >
             <p className={styles.headerText}>About</p>
           </Link>
-          <p className={styles.headerText}>Course</p>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/Courses"}
+          >
+            <p className={styles.headerText}>Course</p>
+          </Link>
           <p className={styles.headerText}>Testimonials</p>
           <p className={styles.headerText}>FAQ</p>
           <p className={styles.headerText}>Contact</p>
