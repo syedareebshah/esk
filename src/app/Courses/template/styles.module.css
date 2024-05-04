@@ -1,0 +1,39 @@
+.mianContainer {
+  height: 350px;
+  position: relative;
+  background-color: rgba(5, 40, 135, 0.774);
+  text-align: center;
+  padding-top: 70px;
+}
+.heading {
+  font-size: 27px !important;
+  color: #3a3838;
+  font-weight: bold !important;
+  padding: 20px 0px !important;
+}
+.headingTwo {
+  font-size: 27px !important;
+  color: #3a3838;
+  font-weight: bold !important;
+}
+.regularTxt {
+  color: #3a3838;
+  line-height: 1.7 !important;
+  padding: 10px 0px !important;
+}
+.courseHeading {
+  font-size: 18px !important;
+  color: #3a3838;
+  font-weight: bold !important;
+  padding: 10px 0px !important;
+}
+.coursePrice {
+  font-size: 18px !important;
+  color: #3a3838;
+  font-weight: bold !important;
+  padding: 5px 0px !important;
+}
+.liTxt {
+  color: #3a3838;
+  line-height: 1.7 !important;
+}
