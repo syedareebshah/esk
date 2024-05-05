@@ -17,7 +17,7 @@ import crew from "../../../../public/crew.jpeg";
 import theme from "@/app/theme";
 export default function AboutPage() {
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
-
+  console.log("isTabisTabisTab", isTab);
   return (
     <Box
       sx={{
@@ -334,25 +334,14 @@ export default function AboutPage() {
         </Grid>
       </Grid>
       <Grid
-        container
-        spacing={3}
         sx={{
+          padding: "20px",
           maxWidth: "1120px",
           margin: "0 auto",
-          padding: "10px",
         }}
+        container
       >
-        <Grid
-          sx={{
-            height: "fit-content",
-          }}
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          xl={6}
-        >
+        <Grid xs={12} sm={12} md={6} lg={6} xl={6}>
           <Typography
             sx={{
               fontSize: "20px",
@@ -385,7 +374,7 @@ export default function AboutPage() {
           </Typography>
           <Button variant="contained">Apply Now</Button>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <Grid xs={12} sm={12} md={6} lg={6} xl={6}>
           <Image
             src={aboutImage}
             alt="img"
@@ -397,50 +386,85 @@ export default function AboutPage() {
             }}
           />
         </Grid>
-        {!isTab && (
-          <Grid paddingTop={10} paddingBottom={10} container>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <Stack
-                direction={"row"}
-                justifyContent={"space-between"}
-                alignItems={"center"}
-                spacing={2}
-              >
-                <Image
-                  src={crew}
-                  alt="img"
-                  style={{
-                    maxWidth: "350px",
-                    width: "100%",
-                    height: "220px",
-                    borderRadius: "16px",
-                  }}
-                />
-                <Image
-                  src={crew}
-                  alt="img"
-                  style={{
-                    maxWidth: "350px",
-                    width: "100%",
-                    height: "220px",
-                    borderRadius: "16px",
-                  }}
-                />
-                <Image
-                  src={crew}
-                  alt="img"
-                  style={{
-                    maxWidth: "350px",
-                    width: "100%",
-                    height: "220px",
-                    borderRadius: "16px",
-                  }}
-                />
-              </Stack>
-            </Grid>
-          </Grid>
-        )}
       </Grid>
+      {!isTab && (
+        <Grid
+          sx={{
+            maxWidth: "1120px",
+            margin: "0 auto",
+          }}
+          paddingTop={10}
+          paddingBottom={10}
+          container
+        >
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+            xs={4}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={4}
+          >
+            <Image
+              src={crew}
+              alt="img"
+              style={{
+                maxWidth: "270px",
+                width: "100%",
+                height: "220px",
+                borderRadius: "16px",
+              }}
+            />
+          </Grid>
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+            xs={4}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={4}
+          >
+            <Image
+              src={crew}
+              alt="img"
+              style={{
+                maxWidth: "270px",
+                width: "100%",
+                height: "220px",
+                borderRadius: "16px",
+              }}
+            />
+          </Grid>
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+            xs={4}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={4}
+          >
+            <Image
+              src={crew}
+              alt="img"
+              style={{
+                maxWidth: "270px",
+                width: "100%",
+                height: "220px",
+                borderRadius: "16px",
+              }}
+            />
+          </Grid>
+        </Grid>
+      )}
     </Box>
   );
 }
