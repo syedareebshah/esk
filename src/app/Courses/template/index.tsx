@@ -47,7 +47,7 @@ export default function CoursesPage() {
             lineHeight: "1.7",
           }}
         >
-          IT Support and Cloud Support specialists roles are always in demand
+          Network Support and Cloud Network Support roles are always in demand
           and growing
         </Typography>
         <Typography
@@ -113,7 +113,7 @@ export default function CoursesPage() {
             or State Government funds, and we do not offer college credits.
           </Typography>
           <Typography className={styles.courseHeading}>
-            1. Network Engineer Specialist ( 4 months )
+            1. Network Engineer Specialist ( 6 months )
           </Typography>
           <Typography className={styles.regularTxt}>
             As a Network Engineer, you'll delve into networking fundamentals
@@ -142,7 +142,7 @@ export default function CoursesPage() {
             proficiency and confidence.
           </Typography>
           <Typography className={styles.coursePrice}>
-            Fee: $600 per month (4 months) = Total $2400
+            Fee: $500 per month (6 months) = Total $3000
           </Typography>
           <Typography className={styles.coursePrice}>
             Anyone can join, no prerequisites.
@@ -156,7 +156,7 @@ export default function CoursesPage() {
             exams.
           </Typography>
           <Typography className={styles.courseHeading}>
-            2. Network Security Engineer ( 4 months)
+            2. Network Security Engineer ( 6 months)
           </Typography>
           <Typography className={styles.regularTxt}>
             The Network Security Firewall Engineer is responsible for designing
@@ -187,7 +187,7 @@ export default function CoursesPage() {
             Headset.
           </Typography>
           <Typography className={styles.coursePrice}>
-            Fee: $600 per month (4 months) = Total $2400
+            Fee: $500 per month (6 months) = Total $3000
           </Typography>
           <Typography className={styles.coursePrice}>
             Anyone can join, no prerequisites.
@@ -237,7 +237,7 @@ export default function CoursesPage() {
             Fee: $350 per month (12 months) = Total $4200
           </Typography>
           <Typography className={styles.courseHeading}>
-            4. Network Design Engineer ( 5 Months )
+            4. Network Design Engineer ( 6 Months )
           </Typography>
           <Typography className={styles.regularTxt}>
             As a Cisco and Data Center Design Engineer, you're entrusted with
@@ -266,7 +266,7 @@ export default function CoursesPage() {
             infrastructures, underpinning the success of modern organizations.
           </Typography>
           <Typography className={styles.coursePrice}>
-            Fee: $600 per month (5 months) = Total $3000
+            Fee: $670 per month (6 months) = Total $4000
           </Typography>
           <Typography className={styles.coursePrice}>
             Anyone can join, no prerequisites.

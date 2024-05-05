@@ -191,6 +191,7 @@ const HomePage = (props: Props) => {
           <Typography
             sx={{
               lineHeight: "1.7",
+              color: "#3a3838",
             }}
           >
             In the realm of Data Center networking, consider mastering
@@ -216,20 +217,19 @@ const HomePage = (props: Props) => {
           <Typography
             sx={{
               lineHeight: "1.7",
+              color: "#3a3838",
             }}
             paddingTop={1}
           >
-            Are you interested in an IT Networking, Cloud, Support Specialist,
-            Cyber Security career? Whether you're a computer science graduate,
-            high school diploma holder, looking to change careers, or seeking a
-            rewarding IT path, we offer hands-on, online learning. Our program,
-            accessible worldwide through Microsoft Teams, provides practical
-            experience on a cloud-based LAB. You'll engage with instructors and
-            peers, gaining skills for IT infrastructure roles. We support you in
-            obtaining certifications, crafting an impressive resume, and
-            excelling in interviews. Take the first step towards a fulfilling IT
-            career, free from the constraints of minimum-wage jobs. Join us on
-            the path to success.
+            Are you interested in Networking , Security , Data Centers and
+            Design? Whether you're a computer science graduate, high school
+            diploma holder, looking to change careers, or seeking a rewarding IT
+            path, we offer hands-on, online learning. You'll engage with
+            instructors and peers, gaining skills for IT infrastructure roles.
+            We support you in obtaining certifications, crafting an impressive
+            resume, and excelling in interviews. Take the first step towards a
+            fulfilling IT career, free from the constraints of minimum-wage
+            jobs. Join us on the path to success.
           </Typography>
           <h1 className={styles.longHeading}>
             We will prepare you with the required technical skills, prepare you
@@ -245,6 +245,7 @@ const HomePage = (props: Props) => {
             <Typography
               sx={{
                 lineHeight: "1.7",
+                color: "#3a3838",
               }}
             >
               Please be aware that we solely offer IT knowledge. We are not an
@@ -385,8 +386,8 @@ const HomePage = (props: Props) => {
               fontWeight: "bold",
               fontSize: "20px",
               lineHeight: "1.7",
-              color: "#f26323",
               textAlign: "center",
+              color: "blue",
             }}
           >
             Testimonials
@@ -417,6 +418,7 @@ const HomePage = (props: Props) => {
                       sx={{
                         lineHeight: "1.7",
                         textAlign: "center",
+                        color: "#3a3838",
                       }}
                     >
                       {slide.txt}
@@ -427,7 +429,7 @@ const HomePage = (props: Props) => {
                         paddingTop: "20px",
                         fontSize: "20px",
                         fontWeight: "bold",
-                        color: "#f26323",
+                        color: "blue",
                       }}
                     >
                       {slide.name}
