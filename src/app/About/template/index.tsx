@@ -21,7 +21,7 @@ import slider1 from "../../../../public/slider1.jpeg";
 import slider2 from "../../../../public/slider3.jpeg";
 import slider3 from "../../../../public/slider4.jpeg";
 import slider4 from "../../../../public/slider5.jpeg";
-import slider5 from "../../../../public/slider6.jpeg";
+import slider5 from "../../../../public/slider_6.jpeg";
 import slider6 from "../../../../public/slider2.jpeg";
 
 export default function AboutPage() {
