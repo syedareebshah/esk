@@ -12,10 +12,42 @@ import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import AccountCircleSharpIcon from "@mui/icons-material/Person2";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
 import Image from "next/image";
-import aboutImage from "../../../../public/aboutImage.jpeg";
+import aboutImage from "../../../../public/slider2.jpeg";
 import crew from "../../../../public/crew.jpeg";
 import theme from "@/app/theme";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import slider1 from "../../../../public/slider1.jpeg";
+import slider2 from "../../../../public/slider3.jpeg";
+import slider3 from "../../../../public/slider4.jpeg";
+import slider4 from "../../../../public/slider5.jpeg";
+import slider5 from "../../../../public/slider6.jpeg";
+import slider6 from "../../../../public/slider2.jpeg";
+
 export default function AboutPage() {
+  const divStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    height: "300px",
+  };
+  const sliderImages = [
+    {
+      images: {
+        image1: slider1,
+        image2: slider2,
+        image3: slider3,
+      },
+    },
+    {
+      images: {
+        image1: slider4,
+        image2: slider5,
+        image3: slider6,
+      },
+    },
+  ];
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
   console.log("isTabisTabisTab", isTab);
   return (
@@ -235,7 +267,7 @@ export default function AboutPage() {
                   }}
                   marginTop={2}
                 >
-                  Learn from 20+ years experience industry experts.
+                  Learn from 10+ years experience industry experts.
                 </Typography>
                 <ul>
                   <li>
@@ -387,83 +419,94 @@ export default function AboutPage() {
           />
         </Grid>
       </Grid>
+
       {!isTab && (
-        <Grid
-          sx={{
-            maxWidth: "1120px",
-            margin: "0 auto",
-          }}
-          paddingTop={10}
-          paddingBottom={10}
-          container
-        >
-          <Grid
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-            xs={4}
-            sm={4}
-            md={4}
-            lg={4}
-            xl={4}
-          >
-            <Image
-              src={crew}
-              alt="img"
-              style={{
-                maxWidth: "270px",
-                width: "100%",
-                height: "220px",
-                borderRadius: "16px",
-              }}
-            />
-          </Grid>
-          <Grid
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-            xs={4}
-            sm={4}
-            md={4}
-            lg={4}
-            xl={4}
-          >
-            <Image
-              src={crew}
-              alt="img"
-              style={{
-                maxWidth: "270px",
-                width: "100%",
-                height: "220px",
-                borderRadius: "16px",
-              }}
-            />
-          </Grid>
-          <Grid
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-            xs={4}
-            sm={4}
-            md={4}
-            lg={4}
-            xl={4}
-          >
-            <Image
-              src={crew}
-              alt="img"
-              style={{
-                maxWidth: "270px",
-                width: "100%",
-                height: "220px",
-                borderRadius: "16px",
-              }}
-            />
-          </Grid>
-        </Grid>
+        <Slide arrows={false} indicators={false}>
+          {sliderImages.map((images, index) => {
+            console.log(images, index);
+            return (
+              <Grid
+                sx={{
+                  maxWidth: "1120px",
+                  margin: "0 auto",
+                }}
+                paddingTop={10}
+                paddingBottom={10}
+                container
+              >
+                <Grid
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                  key={index}
+                  xs={4}
+                  sm={4}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                >
+                  <Image
+                    src={images.images.image1}
+                    alt="img"
+                    style={{
+                      maxWidth: "270px",
+                      width: "100%",
+                      height: "220px",
+                      borderRadius: "16px",
+                    }}
+                  />
+                </Grid>
+                <Grid
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                  key={index}
+                  xs={4}
+                  sm={4}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                >
+                  <Image
+                    src={images.images.image2}
+                    alt="img"
+                    style={{
+                      maxWidth: "270px",
+                      width: "100%",
+                      height: "220px",
+                      borderRadius: "16px",
+                    }}
+                  />
+                </Grid>
+                <Grid
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                  key={index}
+                  xs={4}
+                  sm={4}
+                  md={4}
+                  lg={4}
+                  xl={4}
+                >
+                  <Image
+                    src={images.images.image3}
+                    alt="img"
+                    style={{
+                      maxWidth: "270px",
+                      width: "100%",
+                      height: "220px",
+                      borderRadius: "16px",
+                    }}
+                  />
+                </Grid>
+              </Grid>
+            );
+          })}
+        </Slide>
       )}
     </Box>
   );
