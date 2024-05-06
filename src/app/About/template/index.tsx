@@ -115,15 +115,17 @@ export default function AboutPage() {
                 bottom: "0px",
                 right: "0px",
                 marginTop: { sm: "100px" },
+                borderTopLeftRadius: "26px",
               }}
             >
               <Typography
                 sx={{
                   fontSize: { sm: "12px", xs: "14px", md: "20px" },
                   color: "white",
+                  fontWeight: "bolder",
                 }}
               >
-                Main Office: +0 000 000 0000
+                Main Office: +1 763 777 11-77
               </Typography>
             </Box>
           </Grid>
