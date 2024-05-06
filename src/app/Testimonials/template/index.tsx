@@ -132,51 +132,53 @@ const TestimonialPage = () => {
         >
           We have many success stories; here are some we would like to share.
         </Typography>
-        <Slide arrows={false} indicators={false}>
-          {slideText.map((slide, index) => (
-            <div key={index}>
-              <div
-                style={{
-                  ...txtDivStyle,
-                }}
-              >
-                <Box>
-                  <Typography
-                    sx={{
-                      lineHeight: "1.7",
-                      textAlign: "center",
-                      color: "#3a3838",
-                    }}
-                  >
-                    {slide.txt}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      textAlign: "center",
-                      paddingTop: "20px",
-                      fontSize: "20px",
-                      fontWeight: "bold",
-                      color: "blue",
-                    }}
-                  >
-                    {slide.name}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      paddingTop: "10px",
-                      textAlign: "center",
-                      fontSize: "18px",
-                      fontWeight: "bold",
-                      color: "#474747",
-                    }}
-                  >
-                    {slide.city}
-                  </Typography>
-                </Box>
+        <div className={styles.sliderContainer}>
+          <Slide arrows={false} indicators={false}>
+            {slideText.map((slide, index) => (
+              <div key={index}>
+                <div
+                  style={{
+                    ...txtDivStyle,
+                  }}
+                >
+                  <Box>
+                    <Typography
+                      sx={{
+                        lineHeight: "1.7",
+                        textAlign: "center",
+                        color: "#3a3838",
+                      }}
+                    >
+                      {slide.txt}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        textAlign: "center",
+                        paddingTop: "20px",
+                        fontSize: "20px",
+                        fontWeight: "bold",
+                        color: "blue",
+                      }}
+                    >
+                      {slide.name}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        paddingTop: "10px",
+                        textAlign: "center",
+                        fontSize: "18px",
+                        fontWeight: "bold",
+                        color: "#474747",
+                      }}
+                    >
+                      {slide.city}
+                    </Typography>
+                  </Box>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slide>
+            ))}
+          </Slide>
+        </div>
       </Box>
     </Box>
   );
