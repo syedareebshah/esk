@@ -1,0 +1,7 @@
+.mianContainer {
+  height: 350px;
+  position: relative;
+  background-color: rgba(5, 40, 135, 0.774);
+  text-align: center;
+  padding-top: 70px;
+}

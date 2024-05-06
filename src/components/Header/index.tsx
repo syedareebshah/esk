@@ -65,9 +65,19 @@ const Header = () => {
           >
             <p className={styles.headerText}>Course</p>
           </Link>
-          <p className={styles.headerText}>Testimonials</p>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/Testimonials"}
+          >
+            <p className={styles.headerText}>Testimonials</p>
+          </Link>
+
           <p className={styles.headerText}>FAQ</p>
           <p className={styles.headerText}>Contact</p>
+          <p className={styles.headerText}>Founder</p>
+          <p className={styles.headerText}>Why us</p>
         </Stack>
       </Stack>
     </div>
