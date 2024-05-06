@@ -7,6 +7,12 @@ import "react-slideshow-image/dist/styles.css";
 import arrow from "../../../../public/arrow.png";
 import Image from "next/image";
 import theme from "@/app/theme";
+import slider1 from "../../../../public/slider1.jpeg";
+import slider2 from "../../../../public/slider3.jpeg";
+import slider3 from "../../../../public/slider4.jpeg";
+import slider4 from "../../../../public/slider5.jpeg";
+import slider5 from "../../../../public/slider_6.jpeg";
+import slider6 from "../../../../public/slider2.jpeg";
 
 type Props = {};
 const spanStyle = {
@@ -30,6 +36,14 @@ const txtDivStyle = {
   margin: "0 auto",
   paddingTop: "20px",
 };
+const slideImagess = [
+  { image: slider1 },
+  { image: slider2 },
+  { image: slider3 },
+  { image: slider4 },
+  { image: slider5 },
+  { image: slider6 },
+];
 const slideImages = [
   {
     url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
@@ -171,15 +185,19 @@ const HomePage = (props: Props) => {
           </ul>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-          <Slide arrows={false} indicators={false}>
-            {slideImages.map((slideImage, index) => (
+          <Slide canSwipe={true} arrows={false} indicators={true}>
+            {slideImagess.map((slideImage, index) => (
               <div key={index}>
-                <div
+                <Image
+                  src={slideImage.image}
+                  alt="img"
                   style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "16px",
+                    objectFit: "cover",
                   }}
-                ></div>
+                />
               </div>
             ))}
           </Slide>
