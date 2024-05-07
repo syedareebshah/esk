@@ -193,7 +193,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                Office +0 000 000 0000
+                Office +1 763 777 1177
               </Typography>
             </Stack>
             <Stack direction={"row"} justifyContent={"start"}>
@@ -210,7 +210,7 @@ const Footer = () => {
                   paddingLeft: "8px",
                 }}
               >
-                Mobile and Whatsapp +0 000 000 0000
+                Mobile and Whatsapp +1 763 777 1177
               </Typography>
             </Stack>
             <Stack direction={"row"} justifyContent={"start"}>

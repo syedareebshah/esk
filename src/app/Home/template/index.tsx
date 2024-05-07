@@ -276,127 +276,129 @@ const HomePage = (props: Props) => {
             </Typography>
           </Box>
         </Grid>
-        <Grid
-          sx={{
-            textAlign: "center",
-            padding: "50px 0px",
-            backgroundImage: `url({map})`,
-            backgroundposition: "top center",
-            backgroundRepeat: "no-repeat",
-          }}
-          item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xl={12}
-        >
-          <h2 className={styles.worksHeading}>How it works?</h2>
-          <h5 className={styles.worksSubHeading}>Three Step Process</h5>
-          <Grid container>
-            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <h1 className={styles.count}>1</h1>
-                </div>
-                <h2 className={styles.cardHeading}>Take Class with us</h2>
-                <Typography
-                  sx={{
-                    lineHeight: "1.7",
-                  }}
-                  marginTop={2}
-                >
-                  100% online or classroom. Attend class on Sundays and the rest
-                  of the week learn on your schedule.
-                </Typography>
-              </div>
-            </Grid>
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: isTab ? "50px" : "0px",
-                marginBottom: isTab ? "80px" : "0px",
-              }}
-              item
-              xs={12}
-              sm={12}
-              md={1.5}
-              lg={1.5}
-              xl={1.5}
-            >
-              <Image
-                alt="arrow"
-                src={arrow}
-                width={80}
-                height={30}
-                style={{
-                  transform: isTab ? "rotate(90deg)" : "rotate(0deg)",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <h1 className={styles.count}>2</h1>
-                </div>
-                <h2 className={styles.cardHeading}>
-                  Take Exam to be certified
-                </h2>
-                <Typography marginTop={2}>
-                  Schedule exam in{" "}
-                  <a
-                    className={styles.link}
-                    href="https://home.pearsonvue.com/"
-                    target="blank"
+        <div className={styles.backgroundImg}>
+          <Grid
+            sx={{
+              textAlign: "center",
+              padding: "50px 0px",
+              backgroundImage: `url({map})`,
+              backgroundposition: "top center",
+              backgroundRepeat: "no-repeat",
+            }}
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+          >
+            <h2 className={styles.worksHeading}>How it works?</h2>
+            <h5 className={styles.worksSubHeading}>Three Step Process</h5>
+            <Grid container>
+              <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <h1 className={styles.count}>1</h1>
+                  </div>
+                  <h2 className={styles.cardHeading}>Take Class with us</h2>
+                  <Typography
+                    sx={{
+                      lineHeight: "1.7",
+                    }}
+                    marginTop={2}
                   >
-                    pearsonvue.com
-                  </a>{" "}
-                  and be certified
-                </Typography>
-              </div>
-            </Grid>
-            <Grid
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: isTab ? "50px" : "0px",
-                marginBottom: isTab ? "80px" : "0px",
-              }}
-              item
-              xs={12}
-              sm={12}
-              md={1.5}
-              lg={1.5}
-              xl={1.5}
-            >
-              <Image
-                alt="arrow"
-                src={arrow}
-                width={80}
-                height={30}
-                style={{
-                  transform: isTab ? "rotate(90deg)" : "rotate(0deg)",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <h1 className={styles.count}>3</h1>
+                    100% online or classroom. Attend class on Sundays and the
+                    rest of the week learn on your schedule.
+                  </Typography>
                 </div>
-                <h2 className={styles.cardHeading}>Go to Market</h2>
-                <Typography marginTop={2}>
-                  Using your hands-on experienced knowledge, you will GoTo
-                  Market for job interviews. Our Institute recruiting team will
-                  guide and support you.
-                </Typography>
-              </div>
+              </Grid>
+              <Grid
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: isTab ? "50px" : "0px",
+                  marginBottom: isTab ? "80px" : "0px",
+                }}
+                item
+                xs={12}
+                sm={12}
+                md={1.5}
+                lg={1.5}
+                xl={1.5}
+              >
+                <Image
+                  alt="arrow"
+                  src={arrow}
+                  width={80}
+                  height={30}
+                  style={{
+                    transform: isTab ? "rotate(90deg)" : "rotate(0deg)",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <h1 className={styles.count}>2</h1>
+                  </div>
+                  <h2 className={styles.cardHeading}>
+                    Take Exam to be certified
+                  </h2>
+                  <Typography marginTop={2}>
+                    Schedule exam in{" "}
+                    <a
+                      className={styles.link}
+                      href="https://home.pearsonvue.com/"
+                      target="blank"
+                    >
+                      pearsonvue.com
+                    </a>{" "}
+                    and be certified
+                  </Typography>
+                </div>
+              </Grid>
+              <Grid
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: isTab ? "50px" : "0px",
+                  marginBottom: isTab ? "80px" : "0px",
+                }}
+                item
+                xs={12}
+                sm={12}
+                md={1.5}
+                lg={1.5}
+                xl={1.5}
+              >
+                <Image
+                  alt="arrow"
+                  src={arrow}
+                  width={80}
+                  height={30}
+                  style={{
+                    transform: isTab ? "rotate(90deg)" : "rotate(0deg)",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <h1 className={styles.count}>3</h1>
+                  </div>
+                  <h2 className={styles.cardHeading}>Go to Market</h2>
+                  <Typography marginTop={2}>
+                    Using your hands-on experienced knowledge, you will GoTo
+                    Market for job interviews. Our Institute recruiting team
+                    will guide and support you.
+                  </Typography>
+                </div>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </div>
 
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Typography
