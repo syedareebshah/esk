@@ -131,242 +131,250 @@ export default function AboutPage() {
           </Grid>
         </Grid>
       </div>
-      <Grid
-        sx={{
-          maxWidth: "1120px",
-          margin: "0 auto",
-          paddingLeft: "20px",
-          paddingRight: "20px",
-          marginTop: {
-            xs: "0px",
-            sm: "30px",
-            md: "120px",
-            lg: "80px",
-            xl: "100px",
-          },
-        }}
-        container
-      >
+      <div className={styles.backgroundImg}>
         <Grid
           sx={{
-            textAlign: "center",
-            padding: "50px 0px",
-            backgroundImage: `url({map})`,
-            backgroundposition: "top center",
-            backgroundRepeat: "no-repeat",
+            maxWidth: "1120px",
+            margin: "0 auto",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            marginTop: {
+              xs: "0px",
+              sm: "30px",
+              md: "120px",
+              lg: "80px",
+              xl: "100px",
+            },
           }}
-          item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={12}
-          xl={12}
+          container
         >
-          <h2 className={styles.worksHeading}>HOW IT WORKS?</h2>
-          <h5 className={styles.worksSubHeading}>Three Step Process</h5>
-          <Grid container spacing={3}>
-            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <LaptopMacIcon
+          <Grid
+            sx={{
+              textAlign: "center",
+              padding: "50px 0px",
+              backgroundImage: `url({map})`,
+              backgroundposition: "top center",
+              backgroundRepeat: "no-repeat",
+            }}
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+          >
+            <h2 className={styles.worksHeading}>HOW IT WORKS?</h2>
+            <h5 className={styles.worksSubHeading}>Three Step Process</h5>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <LaptopMacIcon
+                      sx={{
+                        color: "white",
+                        fontSize: "35px",
+                      }}
+                    />
+                  </div>
+                  <h2 className={styles.cardHeading}>
+                    Online or Onsite Courses
+                  </h2>
+                  <Typography
                     sx={{
-                      color: "white",
-                      fontSize: "35px",
+                      lineHeight: "1.7",
+                      textAlign: "start",
                     }}
-                  />
+                    marginTop={2}
+                    marginBottom={2}
+                  >
+                    Using Microsoft teams, learn from anywhere with LAB access.
+                  </Typography>
+                  <ul>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Project Based
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Hands-on
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Learning by doing
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Group Study
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Learn from anywhere
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Anyone can learn
+                      </Typography>
+                    </li>
+                  </ul>
                 </div>
-                <h2 className={styles.cardHeading}>Online or Onsite Courses</h2>
-                <Typography
-                  sx={{
-                    lineHeight: "1.7",
-                    textAlign: "start",
-                  }}
-                  marginTop={2}
-                  marginBottom={2}
-                >
-                  Using Microsoft teams, learn from anywhere with LAB access.
-                </Typography>
-                <ul>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Project Based
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Hands-on
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Learning by doing
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Group Study
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Learn from anywhere
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Anyone can learn
-                    </Typography>
-                  </li>
-                </ul>
-              </div>
-            </Grid>
+              </Grid>
 
-            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <AccountCircleSharpIcon
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <AccountCircleSharpIcon
+                      sx={{
+                        color: "white",
+                        fontSize: "35px",
+                      }}
+                    />
+                  </div>
+                  <h2 className={styles.cardHeading}>Expert Instruction</h2>
+                  <Typography
+                    marginBottom={2}
                     sx={{
-                      color: "white",
-                      fontSize: "35px",
+                      textAlign: "start",
                     }}
-                  />
+                    marginTop={2}
+                  >
+                    Learn from 10+ years experience industry experts.
+                  </Typography>
+                  <ul>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Learn from industry experts
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        24*7 lab access
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Real time communication
+                      </Typography>
+                    </li>
+                  </ul>
                 </div>
-                <h2 className={styles.cardHeading}>Expert Instruction</h2>
-                <Typography
-                  marginBottom={2}
-                  sx={{
-                    textAlign: "start",
-                  }}
-                  marginTop={2}
-                >
-                  Learn from 10+ years experience industry experts.
-                </Typography>
-                <ul>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Learn from industry experts
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      24*7 lab access
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Real time communication
-                    </Typography>
-                  </li>
-                </ul>
-              </div>
-            </Grid>
+              </Grid>
 
-            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-              <div className={styles.card}>
-                <div className={styles.floatingDiv}>
-                  <SavedSearchIcon
-                    sx={{
-                      color: "white",
-                      fontSize: "35px",
-                    }}
-                  />
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <div className={styles.card}>
+                  <div className={styles.floatingDiv}>
+                    <SavedSearchIcon
+                      sx={{
+                        color: "white",
+                        fontSize: "35px",
+                      }}
+                    />
+                  </div>
+                  <h2 className={styles.cardHeading}>Job Placements</h2>
+                  <Typography
+                    marginBottom={2}
+                    textAlign={"start"}
+                    marginTop={2}
+                  >
+                    Get your dream job in IT.
+                  </Typography>
+                  <ul>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Resume building
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Job search training
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Recruitment interview trainings
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography
+                        sx={{
+                          lineHeight: "1.7",
+                          textAlign: "start",
+                        }}
+                      >
+                        Teachnical interviews
+                      </Typography>
+                    </li>
+                  </ul>
                 </div>
-                <h2 className={styles.cardHeading}>Job Placements</h2>
-                <Typography marginBottom={2} textAlign={"start"} marginTop={2}>
-                  Get your dream job in IT.
-                </Typography>
-                <ul>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Resume building
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Job search training
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Recruitment interview trainings
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      sx={{
-                        lineHeight: "1.7",
-                        textAlign: "start",
-                      }}
-                    >
-                      Teachnical interviews
-                    </Typography>
-                  </li>
-                </ul>
-              </div>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </div>
       <Grid
         sx={{
           padding: "20px",

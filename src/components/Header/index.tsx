@@ -77,7 +77,7 @@ const Header = () => {
           <p className={styles.headerText}>FAQ</p>
           <p className={styles.headerText}>Contact</p>
           <p className={styles.headerText}>Founder</p>
-          <p className={styles.headerText}>Why us</p>
+          <p className={styles.headerText}>Why Us</p>
         </Stack>
       </Stack>
     </div>

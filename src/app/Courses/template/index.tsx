@@ -52,16 +52,31 @@ const sliderImages = [
 
 const slideImages = [
   {
-    url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    url: course1,
     caption: "Slide 1",
   },
   {
-    url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+    url: course2,
     caption: "Slide 2",
   },
   {
-    url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    url: course3,
     caption: "Slide 3",
+  },
+  {
+    url: course4,
+  },
+  {
+    url: course5,
+  },
+  {
+    url: course6,
+  },
+  {
+    url: course7,
+  },
+  {
+    url: course8,
   },
 ];
 
@@ -111,7 +126,7 @@ export default function CoursesPage() {
                 }}
               >
                 <Image
-                  src={course1}
+                  src={obj.url}
                   alt="img"
                   style={{
                     maxWidth: "800px",
@@ -238,7 +253,7 @@ export default function CoursesPage() {
                 </Grid>
                 <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
                   <Image
-                    src={course7}
+                    src={course8}
                     alt="img"
                     style={{
                       maxWidth: "250px",

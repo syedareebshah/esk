@@ -96,3 +96,9 @@
 .link:hover {
   color: rgb(42, 42, 139);
 }
+.backgroundImg {
+  background-image: url(../../../../public/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
