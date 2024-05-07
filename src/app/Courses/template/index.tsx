@@ -1,8 +1,18 @@
 "use client";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import styles from "./styles.module.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import course1 from "../../../../public/course1.jpeg";
+import course2 from "../../../../public/course2.jpeg";
+import course3 from "../../../../public/course3.jpeg";
+import course4 from "../../../../public/course4.jpeg";
+import course5 from "../../../../public/course5.jpeg";
+import course6 from "../../../../public/course6.jpeg";
+import course7 from "../../../../public/course7.jpeg";
+import course8 from "../../../../public/course.jpeg";
+import Image from "next/image";
+import theme from "@/app/theme";
 
 const divStyle = {
   display: "flex",
@@ -13,6 +23,32 @@ const divStyle = {
   maxWidth: "1120px",
   margin: "0 auto",
 };
+const sliderImages = [
+  {
+    images: {
+      image1: course1,
+      image2: course2,
+      image3: course3,
+      image4: course4,
+      image5: course5,
+      image6: course6,
+      image7: course7,
+      image8: course8,
+    },
+  },
+  {
+    images: {
+      image1: course1,
+      image2: course2,
+      image3: course3,
+      image4: course4,
+      image5: course5,
+      image6: course6,
+      image7: course7,
+      image8: course8,
+    },
+  },
+];
 
 const slideImages = [
   {
@@ -30,6 +66,8 @@ const slideImages = [
 ];
 
 export default function CoursesPage() {
+  const isBelowLg = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       sx={{
@@ -64,18 +102,158 @@ export default function CoursesPage() {
           end-users. These roles will help daily user IT-related issues such as
           Network, Server, Wireless, Mobile, Application, etc.
         </Typography>
-        <Slide arrows={false} indicators={false}>
-          {slideImages.map((slideImage, index) => (
-            <div key={index}>
-              <div
-                style={{
-                  ...divStyle,
-                  backgroundImage: `url(${slideImage.url})`,
+        {isBelowLg ? (
+          <Slide arrows={false} indicators={false}>
+            {slideImages.map((obj, ind) => (
+              <Box
+                sx={{
+                  padding: "0px 50px",
                 }}
-              ></div>
-            </div>
-          ))}
-        </Slide>
+              >
+                <Image
+                  src={course1}
+                  alt="img"
+                  style={{
+                    maxWidth: "800px",
+                    width: "100%",
+                    height: "300px",
+                    borderRadius: "16px",
+                    objectFit: "cover",
+                    padding: "0px 5px",
+                  }}
+                />
+              </Box>
+            ))}
+          </Slide>
+        ) : (
+          <Slide arrows={false} indicators={false}>
+            {slideImages.map((slideImage, index) => (
+              <Grid
+                sx={{
+                  maxWidth: "1120px",
+                  margin: "0 auto",
+                  padding: "0 40px",
+                }}
+                spacing={2}
+                rowGap={2}
+                container
+              >
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course1}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course2}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course3}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course4}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course5}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course6}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course7}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+                <Grid xs={3} sm={3} md={3} lg={3} xl={3}>
+                  <Image
+                    src={course7}
+                    alt="img"
+                    style={{
+                      maxWidth: "250px",
+                      width: "100%",
+                      height: "160px",
+                      borderRadius: "16px",
+                      objectFit: "cover",
+                      padding: "0px 5px",
+                    }}
+                  />
+                </Grid>
+              </Grid>
+            ))}
+          </Slide>
+        )}
       </div>
       <Box
         sx={{ marginTop: { xs: "350px", sm: "230px" }, padding: "0px 30px" }}
