@@ -120,12 +120,12 @@ export default function AboutPage() {
             >
               <Typography
                 sx={{
-                  fontSize: { sm: "12px", xs: "14px", md: "20px" },
+                  fontSize: { sm: "12px", xs: "14px", md: "30px" },
                   color: "white",
                   fontWeight: "bolder",
                 }}
               >
-                Main Office: +1 763 777 11-77
+                Main Office: +1 763 777 1177
               </Typography>
             </Box>
           </Grid>
