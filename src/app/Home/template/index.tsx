@@ -276,6 +276,34 @@ const HomePage = (props: Props) => {
             </Typography>
           </Box>
         </Grid>
+        <Stack
+          sx={{
+            width: "100%",
+          }}
+          direction={"row"}
+          justifyContent={"space-between"}
+        >
+          <Box></Box>
+          <Box
+            sx={{
+              backgroundColor: "blue",
+              width: "fit-content",
+              marginTop: "30px",
+              padding: { sm: "5px 10px", xs: "5px 10px", md: "20px 30px" },
+              borderTopLeftRadius: { sm: "16px", xs: "18px", md: "26px" },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: { sm: "20px", xs: "24px", md: "30px" },
+                color: "white",
+                fontWeight: "bolder",
+              }}
+            >
+              Main Office: +1 763 777 1177
+            </Typography>
+          </Box>
+        </Stack>
         <div className={styles.backgroundImg}>
           <Grid
             sx={{

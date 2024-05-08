@@ -81,7 +81,14 @@ const Header = () => {
           >
             <p className={styles.headerText}>FAQ</p>
           </Link>
-          <p className={styles.headerText}>Contact</p>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/Contact"}
+          >
+            <p className={styles.headerText}>Contact</p>
+          </Link>
           <p className={styles.headerText}>Founder</p>
           <p className={styles.headerText}>Why Us</p>
         </Stack>
