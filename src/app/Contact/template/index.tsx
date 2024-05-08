@@ -48,13 +48,14 @@ const ContactPage = () => {
                   lineHeight: "1.7",
                   textAlign: "center",
                 }}
+                color={"#3a3838"}
                 marginTop={2}
                 marginBottom={2}
               >
                 <a
                   style={{
                     textDecoration: "none",
-                    color: "black",
+                    color: "#3a3838",
                   }}
                   href="mailto:eskit_t@outlook.com"
                 >
@@ -81,9 +82,10 @@ const ContactPage = () => {
                   textAlign: "center",
                 }}
                 marginTop={2}
+                color={"#3a3838"}
               >
                 18530 Ogden Street NW, Elk River, MN 55330 Minnesota,
-                Minneapolis
+                Minneapolis USA
               </Typography>
             </div>
           </Grid>
@@ -99,7 +101,12 @@ const ContactPage = () => {
                 />
               </div>
               <h2 className={styles.cardHeading}>Phone</h2>
-              <Typography marginBottom={2} textAlign={"center"} marginTop={2}>
+              <Typography
+                color={"#3a3838"}
+                marginBottom={2}
+                textAlign={"center"}
+                marginTop={2}
+              >
                 +1 763 777 1177
               </Typography>
             </div>
