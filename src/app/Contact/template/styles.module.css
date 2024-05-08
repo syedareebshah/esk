@@ -22,7 +22,7 @@
   transform: scale(1.05); /* Scale up on hover */
 }
 .floatingDiv {
-  background-color: blue;
+  background-color: #0c365d;
   height: 70px;
   width: 70px;
   display: flex;
@@ -39,4 +39,5 @@
   font-weight: 900 !important;
   line-height: 1.7;
   text-align: center;
+  color: #3a3838;
 }
