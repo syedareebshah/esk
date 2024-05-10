@@ -1,0 +1,9 @@
+.imgContainer {
+  background-image: url(../../../../public/datacenter.jpeg);
+  background-position: end end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+  height: 400px;
+}
