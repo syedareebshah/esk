@@ -90,12 +90,6 @@ const FounderPage = () => {
               justifyContent: "center",
             }}
             item
-            sx={{
-              height: "fit-content",
-
-              padding: "0px",
-              margin: "0px",
-            }}
             draggable
             xs={12}
             sm={12}
@@ -117,21 +111,7 @@ const FounderPage = () => {
               }}
             />
           </Grid>
-          <Grid
-            item
-            sx={{
-              height: "fit-content",
-
-              padding: "0px",
-              margin: "0px",
-            }}
-            draggable
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xl={6}
-          >
+          <Grid item draggable xs={12} sm={12} md={12} lg={6} xl={6}>
             <Typography
               sx={{
                 fontSize: "35px",
@@ -208,12 +188,6 @@ const FounderPage = () => {
               <Grid draggable container>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   spacing={3}
                   draggable
                   xs={12}
@@ -239,12 +213,6 @@ const FounderPage = () => {
                 </Grid>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   draggable
                   xs={12}
                   sm={12}
@@ -269,12 +237,6 @@ const FounderPage = () => {
                 </Grid>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   draggable
                   xs={12}
                   sm={12}
@@ -299,12 +261,6 @@ const FounderPage = () => {
                 </Grid>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   draggable
                   xs={12}
                   sm={12}
@@ -329,12 +285,6 @@ const FounderPage = () => {
                 </Grid>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   draggable
                   xs={12}
                   sm={12}
@@ -359,12 +309,6 @@ const FounderPage = () => {
                 </Grid>
                 <Grid
                   item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
                   draggable
                   xs={12}
                   sm={12}
@@ -425,20 +369,7 @@ const FounderPage = () => {
           <Slide indicators duration={1500} canSwipe arrows={false}>
             {smallSlider.map((obj, ind) => (
               <Grid draggable container>
-                <Grid
-                  item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
-                  spacing={4}
-                  draggable
-                  xs={3}
-                  sm={3}
-                  md={3}
-                >
+                <Grid item spacing={4} draggable xs={3} sm={3} md={3}>
                   <Image
                     draggable
                     alt="img"
@@ -454,19 +385,7 @@ const FounderPage = () => {
                     }}
                   />
                 </Grid>
-                <Grid
-                  item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
-                  draggable
-                  xs={3}
-                  sm={3}
-                  md={3}
-                >
+                <Grid item draggable xs={3} sm={3} md={3}>
                   <Image
                     draggable
                     alt="img"
@@ -482,19 +401,7 @@ const FounderPage = () => {
                     }}
                   />
                 </Grid>
-                <Grid
-                  item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
-                  draggable
-                  xs={3}
-                  sm={3}
-                  md={3}
-                >
+                <Grid item draggable xs={3} sm={3} md={3}>
                   <Image
                     draggable
                     alt="img"
@@ -510,19 +417,7 @@ const FounderPage = () => {
                     }}
                   />
                 </Grid>
-                <Grid
-                  item
-                  sx={{
-                    height: "fit-content",
-
-                    padding: "0px",
-                    margin: "0px",
-                  }}
-                  draggable
-                  xs={3}
-                  sm={3}
-                  md={3}
-                >
+                <Grid item draggable xs={3} sm={3} md={3}>
                   <Image
                     draggable
                     alt="img"
