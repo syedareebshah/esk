@@ -47,16 +47,22 @@ const slider = [
 ];
 const smallSlider = [
   {
-    imgOne: { img: comp1, url: "" },
-    imgTwo: { img: comp2, url: "" },
-    imgThree: { img: comp3, url: "" },
-    imgFour: { img: comp4, url: "" },
+    imgOne: { img: comp1, url: "https://www.ameriprise.com/" },
+    imgTwo: { img: comp2, url: "https://www.unitedhealthgroup.com/" },
+    imgThree: {
+      img: comp3,
+      url: "https://my.clevelandclinic.org/locations/fairview-hospital",
+    },
+    imgFour: { img: comp4, url: "https://www.westconsincu.org/" },
   },
   {
-    imgOne: { img: comp5, url: "" },
-    imgTwo: { img: comp6, url: "" },
-    imgThree: { img: comp7, url: "" },
-    imgFour: { img: comp1, url: "" },
+    imgOne: {
+      img: comp5,
+      url: "https://www.cisco.com/c/en/us/products/plus-as-a-service/secure-connect.html",
+    },
+    imgTwo: { img: comp6, url: "https://www.ecolab.com/" },
+    imgThree: { img: comp7, url: "https://www.wellsfargo.com/" },
+    imgFour: { img: comp1, url: "https://www.ameriprise.com/" },
   },
 ];
 
@@ -196,20 +202,22 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp1}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href="https://www.ameriprise.com/" target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp1}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   item
@@ -220,20 +228,22 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp2}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href="https://www.unitedhealthgroup.com/" target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp2}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   item
@@ -244,20 +254,25 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp3}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a
+                    href="https://my.clevelandclinic.org/locations/fairview-hospital"
+                    target="blank"
+                  >
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp3}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   item
@@ -268,20 +283,22 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp4}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href="https://www.westconsincu.org/" target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp4}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   item
@@ -292,20 +309,25 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp5}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a
+                    href="https://www.cisco.com/c/en/us/products/plus-as-a-service/secure-connect.html"
+                    target="blank"
+                  >
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp5}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   item
@@ -316,20 +338,22 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp6}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href="https://www.ecolab.com/" target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp6}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
 
                 <Grid
@@ -346,20 +370,22 @@ const FounderPage = () => {
                   lg={1.71}
                   xl={1.71}
                 >
-                  <Image
-                    draggable
-                    alt="img"
-                    src={comp7}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href="https://www.wellsfargo.com/" target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={comp7}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
               </Grid>
             ))}
@@ -370,68 +396,76 @@ const FounderPage = () => {
             {smallSlider.map((obj, ind) => (
               <Grid draggable container>
                 <Grid item spacing={4} draggable xs={3} sm={3} md={3}>
-                  <Image
-                    draggable
-                    alt="img"
-                    src={obj.imgOne.img}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href={obj.imgOne.url} target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={obj.imgOne.img}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid item draggable xs={3} sm={3} md={3}>
-                  <Image
-                    draggable
-                    alt="img"
-                    src={obj.imgTwo.img}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href={obj.imgTwo.url} target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={obj.imgTwo.img}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid item draggable xs={3} sm={3} md={3}>
-                  <Image
-                    draggable
-                    alt="img"
-                    src={obj.imgThree.img}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href={obj.imgThree.url} target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={obj.imgThree.img}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid item draggable xs={3} sm={3} md={3}>
-                  <Image
-                    draggable
-                    alt="img"
-                    src={obj.imgFour.img}
-                    style={{
-                      cursor: "pointer",
-                      maxWidth: "100px",
-                      width: "100%",
-                      height: "100px",
-                      borderRadius: "16px",
-                      margin: "0 auto",
-                      objectFit: "contain",
-                    }}
-                  />
+                  <a href={obj.imgFour.url} target="blank">
+                    <Image
+                      draggable
+                      alt="img"
+                      src={obj.imgFour.img}
+                      style={{
+                        cursor: "pointer",
+                        maxWidth: "100px",
+                        width: "100%",
+                        height: "100px",
+                        borderRadius: "16px",
+                        margin: "0 auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </a>
                 </Grid>
               </Grid>
             ))}
