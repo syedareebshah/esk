@@ -5,6 +5,8 @@ import logo from "../../../public/logo.jpeg";
 import styles from "./styles.module.css";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
+import Link from "next/link";
+
 const MobileHeader = () => {
   const [open, setOpen] = React.useState(false);
 
@@ -40,12 +42,54 @@ const MobileHeader = () => {
           onClick={() => setOpen(false)}
         />
       </Stack>
-      <p className={styles.drawerLink}>Home</p>
-      <p className={styles.drawerLink}>About</p>
-      <p className={styles.drawerLink}>Course</p>
-      <p className={styles.drawerLink}>Testimonials</p>
-      <p className={styles.drawerLink}>FAQ</p>
-      <p className={styles.drawerLink}>Contact</p>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/"}
+      >
+        <p className={styles.drawerLink}>Home</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/About"}
+      >
+        <p className={styles.drawerLink}>About</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/Courses"}
+      >
+        <p className={styles.drawerLink}>Course</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/Testimonials"}
+      >
+        <p className={styles.drawerLink}>Testimonials</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/Faq"}
+      >
+        <p className={styles.drawerLink}>FAQ</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/Contact"}
+      >
+        <p className={styles.drawerLink}>Contact</p>
+      </Link>
     </Box>
   );
   return (
