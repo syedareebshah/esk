@@ -185,8 +185,8 @@ const FounderPage = () => {
             paddingTop: "50px",
           }}
         >
-          Worked for many Global Organizations as an Architect and Technical
-          leader.
+          Worked for many Global Organizations as an Senior Network Engineer and
+          Technical leader.
         </Typography>
         {!isBelowLg && (
           <Slide indicators duration={1500} canSwipe arrows={false}>
