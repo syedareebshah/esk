@@ -47,16 +47,19 @@ const ContactPage = () => {
                 sx={{
                   lineHeight: "1.7",
                   textAlign: "center",
+                  fontWeight: "bold",
+                  fontSize: "18px",
                 }}
                 color={"#3a3838"}
                 marginTop={2}
                 marginBottom={2}
               >
                 <a
-                  style={{
-                    textDecoration: "none",
-                    color: "#3a3838",
-                  }}
+                  className={styles.mail}
+                  // style={{
+                  //   textDecoration: "none",
+                  //   color: "#3a3838",
+                  // }}
                   href="mailto:eskit_t@outlook.com"
                 >
                   eskit_t@outlook.com
@@ -80,6 +83,8 @@ const ContactPage = () => {
                 marginBottom={2}
                 sx={{
                   textAlign: "center",
+                  fontWeight: "bold",
+                  fontSize: "18px",
                 }}
                 marginTop={2}
                 color={"#3a3838"}
@@ -102,12 +107,16 @@ const ContactPage = () => {
               </div>
               <h2 className={styles.cardHeading}>Phone</h2>
               <Typography
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: "18px",
+                }}
                 color={"#3a3838"}
                 marginBottom={2}
                 textAlign={"center"}
                 marginTop={2}
               >
-                +1 763 777 1177
+                Office: +1 763 777 1177
               </Typography>
             </div>
           </Grid>

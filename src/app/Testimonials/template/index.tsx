@@ -41,6 +41,11 @@ const TestimonialPage = () => {
       name: "Nana Bandoh",
       city: "Minneapolis",
     },
+    {
+      txt: "I was not from any IT related background and never thought that I could become an IT professional. I was hesitant to join; however, I enjoyed the entire journey and now I’m a full time engineer in Dallas Texas. Thank you, ESK IT Training, for allowing me to learn more and grow.",
+      name: "Daniel Adigwe",
+      city: "Minneapolis",
+    },
   ];
 
   return (

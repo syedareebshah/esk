@@ -41,3 +41,11 @@
   text-align: center;
   color: #3a3838;
 }
+.mail {
+  color: #3a3838;
+  text-decoration: none;
+}
+.mail:hover {
+  color: blue;
+  text-decoration: underline;
+}
