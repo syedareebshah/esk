@@ -16,6 +16,7 @@ import microsoftLogo from "../../../public/microsoft.png";
 import sonicaLogo from "../../../public/sonica.png";
 import fortinet from "../../../public/fortinet.png";
 import paloAlto from "../../../public/paloAlto.png";
+import Link from "next/link";
 
 const Footer = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -248,11 +249,41 @@ const Footer = () => {
               sm={3}
             >
               <Box>
-                <p className={styles.navText}>About</p>
-                <p className={styles.navText}>Mission</p>
-                <p className={styles.navText}>Leadership</p>
-                <p className={styles.navText}>Team</p>
-                <p className={styles.navText}>Team members</p>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/About"}
+                >
+                  <p className={styles.navText}>About</p>
+                </Link>
+
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/Founder"}
+                >
+                  <p className={styles.navText}>Founder</p>
+                </Link>
+
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/"}
+                >
+                  <p className={styles.navText}>Why Us</p>
+                </Link>
+
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/Contact"}
+                >
+                  <p className={styles.navText}>Contact</p>
+                </Link>
               </Box>
             </Grid>
           )}
@@ -271,9 +302,30 @@ const Footer = () => {
               sm={3}
             >
               <Box>
-                <p className={styles.navText}>Training cources</p>
-                <p className={styles.navText}>Testimonials </p>
-                <p className={styles.navText}>FAQ</p>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/Courses"}
+                >
+                  <p className={styles.navText}>Training cources</p>
+                </Link>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/Testimonials"}
+                >
+                  <p className={styles.navText}>Testimonials </p>
+                </Link>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={"/Faq"}
+                >
+                  <p className={styles.navText}>FAQ</p>
+                </Link>
               </Box>
             </Grid>
           )}
