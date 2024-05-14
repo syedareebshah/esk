@@ -296,17 +296,13 @@ const HomePage = (props: Props) => {
               marginTop: "30px",
               padding: { sm: "5px 10px", xs: "5px 10px", md: "20px 30px" },
               borderTopLeftRadius: { sm: "16px", xs: "18px", md: "26px" },
+              color: "white",
+              fontSize: { sm: "20px", xs: "24px", md: "30px" },
+              fontWeight: "bolder",
             }}
           >
-            <Typography
-              sx={{
-                fontSize: { sm: "20px", xs: "24px", md: "30px" },
-                color: "white",
-                fontWeight: "bolder",
-              }}
-            >
-              Main Office: +1 763 777 1177
-            </Typography>
+            <Typography> </Typography>
+            Main Office: +1 763 777 1177
           </Box>
         </Stack>
         <div className={styles.backgroundImg}>
