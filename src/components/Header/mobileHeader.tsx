@@ -86,6 +86,22 @@ const MobileHeader = () => {
         style={{
           textDecoration: "none",
         }}
+        href={"/Founder"}
+      >
+        <p className={styles.drawerLink}>Founder</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
+        href={"/WhyUs"}
+      >
+        <p className={styles.drawerLink}>Why Us</p>
+      </Link>
+      <Link
+        style={{
+          textDecoration: "none",
+        }}
         href={"/Contact"}
       >
         <p className={styles.drawerLink}>Contact</p>

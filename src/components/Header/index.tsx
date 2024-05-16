@@ -89,7 +89,14 @@ const Header = () => {
           >
             <p className={styles.headerText}>Founder</p>
           </Link>
-          <p className={styles.headerText}>Why Us</p>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            href={"/WhyUs"}
+          >
+            <p className={styles.headerText}>Why Us</p>
+          </Link>
           <Link
             style={{
               textDecoration: "none",
