@@ -189,7 +189,13 @@ const FounderPage = () => {
           Technical leader.
         </Typography>
         {!isBelowLg && (
-          <Slide indicators duration={1500} canSwipe arrows={false}>
+          <Slide
+            indicators
+            duration={2000}
+            transitionDuration={300}
+            canSwipe
+            arrows={false}
+          >
             {slider.map((obj, ind) => (
               <Grid draggable container>
                 <Grid
@@ -392,7 +398,13 @@ const FounderPage = () => {
           </Slide>
         )}
         {isBelowLg && (
-          <Slide indicators duration={1500} canSwipe arrows={false}>
+          <Slide
+            indicators
+            duration={2000}
+            transitionDuration={300}
+            canSwipe
+            arrows={false}
+          >
             {smallSlider.map((obj, ind) => (
               <Grid draggable container>
                 <Grid item spacing={4} draggable xs={3} sm={3} md={3}>

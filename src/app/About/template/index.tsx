@@ -431,7 +431,12 @@ export default function AboutPage() {
       </Grid>
 
       {!isTab && (
-        <Slide arrows={false} indicators={false}>
+        <Slide
+          arrows={false}
+          indicators={false}
+          duration={2000}
+          transitionDuration={300}
+        >
           {sliderImages.map((images, index) => {
             console.log(images, index);
             return (

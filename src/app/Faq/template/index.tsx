@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import styles from "./styles.module.css";
 import Accordion from "@mui/material/Accordion";
@@ -142,6 +142,34 @@ const FaqPage = () => {
             </AccordionDetails>
           </Accordion>
         ))}
+        <Stack
+          direction={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <Typography
+            sx={{
+              fontSize: "23px",
+              fontWeight: "bolder",
+              textAlign: "center",
+              color: "blue",
+              paddingTop: "50px",
+            }}
+          >
+            If you have not found the answer you want to ask
+          </Typography>
+          <Button
+            sx={{
+              padding: "10px 20px",
+              maxWidth: "150px",
+              marginTop: "30px",
+            }}
+            href="./Contact"
+            variant="contained"
+          >
+            CONTACT US
+          </Button>
+        </Stack>
       </Box>
     </Box>
   );

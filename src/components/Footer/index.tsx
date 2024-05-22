@@ -271,7 +271,7 @@ const Footer = () => {
                   style={{
                     textDecoration: "none",
                   }}
-                  href={"/"}
+                  href={"/WhyUs"}
                 >
                   <p className={styles.navText}>Why Us</p>
                 </Link>

@@ -87,7 +87,27 @@ const slideText = [
   {
     txt: "I was not from any IT related background and never thought that I could become an IT professional. I was hesitant to join; however, I enjoyed the entire journey and now I’m a full time engineer in Dallas Texas. Thank you, ESK IT Training, for allowing me to learn more and grow.",
     name: "Daniel Adigwe",
-    city: "Minneapolis",
+    city: "Dallax , Tx",
+  },
+  {
+    txt: "I recently completed my CCNA, A+, and Network+ training with ESK IT Trainings, and I couldn’t be happier with the results. The comprehensive and hands-on approach of the courses not only helped me get certified but also secured me a job in the IT industry. The instructors were knowledgeable and supportive, guiding me every step of the way. I highly recommend ESK IT Trainings to anyone looking to advance their IT career.",
+    name: "John D.",
+    city: "Dallax , Tx",
+  },
+  {
+    txt: "Enrolling in the Data Center Design training at ESK IT Trainings was one of the best decisions I’ve made for my professional development. The in-depth curriculum and expert guidance provided me with a thorough understanding of data center infrastructure and design principles. I am extremely satisfied with the knowledge I gained and feel confident in applying these skills in my current role.",
+    name: "Sarah Marry",
+    city: "Los Angeles",
+  },
+  {
+    txt: "The training I received in troubleshooting various VPN, routing, and switching protocols at ESK IT Trainings has been instrumental in my career growth. The hands-on exercises and real-world scenarios provided me with the expertise needed to excel in my field. I now feel confident handling complex network issues and have become an expert in my organization. Thank you, ESK IT Trainings!",
+    name: "Michael Terry",
+    city: "San Gabriel",
+  },
+  {
+    txt: "I took the SD-WAN training course at ESK IT Trainings, and it has greatly enhanced my professional capabilities. The detailed and practical training allowed me to become a lead expert in SD-WAN technologies. My skills are now highly recognized and encouraged at my workplace. ESK IT Trainings has truly empowered me to take my career to the next level.",
+    name: "Emily Roberts",
+    city: "London, UK",
   },
 ];
 
@@ -190,7 +210,13 @@ const HomePage = (props: Props) => {
           </ul>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-          <Slide canSwipe={true} arrows={false} indicators={true}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            canSwipe={true}
+            arrows={false}
+            indicators={true}
+          >
             {slideImagess.map((slideImage, index) => (
               <div key={index}>
                 <Image
@@ -454,7 +480,12 @@ const HomePage = (props: Props) => {
           >
             We have many success stories; here are some we would like to share.
           </Typography>
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideText.map((slide, index) => (
               <div key={index}>
                 <div

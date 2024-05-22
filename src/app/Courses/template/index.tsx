@@ -118,7 +118,12 @@ export default function CoursesPage() {
           Network, Server, Wireless, Mobile, Application, etc.
         </Typography>
         {isBelowLg ? (
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideImages.map((obj, ind) => (
               <Box
                 sx={{
@@ -141,7 +146,12 @@ export default function CoursesPage() {
             ))}
           </Slide>
         ) : (
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideImages.map((slideImage, index) => (
               <Grid
                 sx={{
@@ -293,7 +303,7 @@ export default function CoursesPage() {
             programs are not provided for free.
           </Typography>
           <Typography className={styles.headingTwo}>
-            We offer only 4 training programs
+            We offer only 5 training programs
           </Typography>
           <Typography className={styles.headingTwo}>
             Students can pick one of these training courses independently.
@@ -471,6 +481,34 @@ export default function CoursesPage() {
             Students can go to Pearsonvue.com and take relevant exams to obtain
             industry valid certification such as SD-WAN, Data Center Core, DCACI
             (Plan, Design, Implement and Troubleshoot)
+          </Typography>
+          <Typography className={styles.courseHeading}>
+            5. Networking with Beginners ( 6 Months )
+          </Typography>
+          <Typography className={styles.regularTxt}>
+            At our training center, we specialize in equipping beginners with
+            the essential skills and knowledge needed for a successful career in
+            IT networking. Our comprehensive curriculum covers three critical
+            certifications: CCNA (Cisco Certified Network Associate), Network+,
+            and A+. The CCNA course focuses on networking fundamentals,
+            including routing and switching, IP addressing, and network
+            security, providing a strong foundation in network infrastructure.
+            The Network+ certification, from CompTIA, broadens your
+            understanding by covering a wide range of networking concepts,
+            troubleshooting techniques, and best practices across various
+            devices and platforms. Lastly, the A+ certification, also from
+            CompTIA, offers a solid grounding in hardware, software, and basic
+            networking, ensuring you have a well-rounded understanding of IT
+            essentials. Together, these courses provide a holistic approach to
+            networking, preparing you for diverse roles in the IT industry. Join
+            us to start your journey toward becoming a skilled networking
+            professional.
+          </Typography>
+          <Typography className={styles.coursePrice}>
+            Fee: $400 per month (6 months) = Total $2400
+          </Typography>
+          <Typography className={styles.coursePrice}>
+            Anyone can join, no prerequisites.
           </Typography>
           <Typography className={styles.heading}>
             Admission Requirements:
