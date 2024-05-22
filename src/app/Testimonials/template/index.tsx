@@ -158,7 +158,12 @@ const TestimonialPage = () => {
           We have many success stories; here are some we would like to share.
         </Typography>
         <div className={styles.sliderContainer}>
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideText.map((slide, index) => (
               <div key={index}>
                 <div

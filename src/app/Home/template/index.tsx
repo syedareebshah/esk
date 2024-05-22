@@ -210,7 +210,13 @@ const HomePage = (props: Props) => {
           </ul>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-          <Slide canSwipe={true} arrows={false} indicators={true}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            canSwipe={true}
+            arrows={false}
+            indicators={true}
+          >
             {slideImagess.map((slideImage, index) => (
               <div key={index}>
                 <Image
@@ -474,7 +480,12 @@ const HomePage = (props: Props) => {
           >
             We have many success stories; here are some we would like to share.
           </Typography>
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideText.map((slide, index) => (
               <div key={index}>
                 <div

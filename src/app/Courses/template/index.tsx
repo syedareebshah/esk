@@ -118,7 +118,12 @@ export default function CoursesPage() {
           Network, Server, Wireless, Mobile, Application, etc.
         </Typography>
         {isBelowLg ? (
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideImages.map((obj, ind) => (
               <Box
                 sx={{
@@ -141,7 +146,12 @@ export default function CoursesPage() {
             ))}
           </Slide>
         ) : (
-          <Slide arrows={false} indicators={false}>
+          <Slide
+            duration={2000}
+            transitionDuration={300}
+            arrows={false}
+            indicators={false}
+          >
             {slideImages.map((slideImage, index) => (
               <Grid
                 sx={{
