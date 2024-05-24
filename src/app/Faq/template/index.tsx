@@ -161,8 +161,9 @@ const FaqPage = () => {
           <Button
             sx={{
               padding: "10px 20px",
-              maxWidth: "150px",
+              maxWidth: "180px",
               marginTop: "30px",
+              fontSize: "18px",
             }}
             href="./Contact"
             variant="contained"
