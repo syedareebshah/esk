@@ -302,9 +302,7 @@ export default function CoursesPage() {
             IT with us. However, it's important to note that our training
             programs are not provided for free.
           </Typography>
-          <Typography className={styles.headingTwo}>
-            We offer only 5 training programs
-          </Typography>
+          <Typography className={styles.headingTwo}></Typography>
           <Typography className={styles.headingTwo}>
             Students can pick one of these training courses independently.
           </Typography>
@@ -315,29 +313,53 @@ export default function CoursesPage() {
             personvue.com. We neither accept nor provide FAFSA, loans, Federal
             or State Government funds, and we do not offer college credits.
           </Typography>
+
           <Typography className={styles.courseHeading}>
-            1. Network Engineer Specialist ( 6 months )
+            1. Networking with Beginners ( 6 Months )
           </Typography>
+          <Typography className={styles.regularTxt}>
+            At our training center, we specialize in equipping beginners with
+            the essential skills and knowledge needed for a successful career in
+            IT networking. Our comprehensive curriculum covers three critical
+            certifications: CCNA (Cisco Certified Network Associate), Network+,
+            and A+. The CCNA course focuses on networking fundamentals,
+            including routing and switching, IP addressing, and network
+            security, providing a strong foundation in network infrastructure.
+            The Network+ certification, from CompTIA, broadens your
+            understanding by covering a wide range of networking concepts,
+            troubleshooting techniques, and best practices across various
+            devices and platforms. Lastly, the A+ certification, also from
+            CompTIA, offers a solid grounding in hardware, software, and basic
+            networking, ensuring you have a well-rounded understanding of IT
+            essentials. Together, these courses provide a holistic approach to
+            networking, preparing you for diverse roles in the IT industry. Join
+            us to start your journey toward becoming a skilled networking
+            professional.
+          </Typography>
+          <Typography className={styles.coursePrice}>
+            Fee: $400 per month (6 months) = Total $2400
+          </Typography>
+          <Typography className={styles.coursePrice}>
+            Anyone can join, no prerequisites.
+          </Typography>
+
+          <Typography className={styles.courseHeading}>
+            2. Network Engineer Specialist ( 6 months )
+          </Typography>
+
           <Typography className={styles.regularTxt}>
             As a Network Engineer, you'll delve into networking fundamentals
             such as the OSI model, TCP/IP, and VLANs, progressing to advance
             routing and switching techniques with OSPF, BGP, and VLAN
-            segmentation.
+            segmentation. Security becomes paramount, covering firewalls, VPNs,
+            and intrusion detection/prevention systems. You'll design resilient
+            network architectures while exploring wireless technologies and
+            network management tools. Virtualization and cloud networking skills
+            become essential alongside automation using Python and tools like
+            Ansible. Pursuing certifications like CCNA, CCNP, validates your
+            expertise, propelling your career forward in this dynamic field.
           </Typography>
-          <Typography className={styles.regularTxt}>
-            Security becomes paramount, covering firewalls, VPNs, and intrusion
-            detection/prevention systems. You'll design resilient network
-            architectures while exploring wireless technologies and network
-            management tools.
-          </Typography>
-          <Typography className={styles.regularTxt}>
-            Virtualization and cloud networking skills become essential
-            alongside automation using Python and tools like Ansible.
-          </Typography>
-          <Typography className={styles.regularTxt}>
-            Pursuing certifications like CCNA, CCNP, validates your expertise,
-            propelling your career forward in this dynamic field.
-          </Typography>
+
           <Typography className={styles.regularTxt}>
             Join us on this journey to becoming a Network Engineer, where you
             will acquire the skills to support users effectively and tackle
@@ -359,7 +381,7 @@ export default function CoursesPage() {
             exams.
           </Typography>
           <Typography className={styles.courseHeading}>
-            2. Network Security Engineer ( 6 months)
+            3. Network Security Engineer ( 6 months)
           </Typography>
           <Typography className={styles.regularTxt}>
             The Network Security Firewall Engineer is responsible for designing
@@ -403,8 +425,9 @@ export default function CoursesPage() {
             industry valid certification such as Cisco SNCF, ISE, PCNSA or PCNSE
             same for Fortinet’s.
           </Typography>
+
           <Typography className={styles.courseHeading}>
-            3. Kids Computer Science program
+            4. Kids Computer Science program
           </Typography>
           <Typography className={styles.regularTxt}>
             Welcome to our comprehensive one-year program designed for kids to
@@ -440,7 +463,7 @@ export default function CoursesPage() {
             Fee: $350 per month (12 months) = Total $4200
           </Typography>
           <Typography className={styles.courseHeading}>
-            4. Network Design Engineer ( 6 Months )
+            5. Network Design Engineer ( 6 Months )
           </Typography>
           <Typography className={styles.regularTxt}>
             As a Cisco and Data Center Design Engineer, you're entrusted with
@@ -482,34 +505,7 @@ export default function CoursesPage() {
             industry valid certification such as SD-WAN, Data Center Core, DCACI
             (Plan, Design, Implement and Troubleshoot)
           </Typography>
-          <Typography className={styles.courseHeading}>
-            5. Networking with Beginners ( 6 Months )
-          </Typography>
-          <Typography className={styles.regularTxt}>
-            At our training center, we specialize in equipping beginners with
-            the essential skills and knowledge needed for a successful career in
-            IT networking. Our comprehensive curriculum covers three critical
-            certifications: CCNA (Cisco Certified Network Associate), Network+,
-            and A+. The CCNA course focuses on networking fundamentals,
-            including routing and switching, IP addressing, and network
-            security, providing a strong foundation in network infrastructure.
-            The Network+ certification, from CompTIA, broadens your
-            understanding by covering a wide range of networking concepts,
-            troubleshooting techniques, and best practices across various
-            devices and platforms. Lastly, the A+ certification, also from
-            CompTIA, offers a solid grounding in hardware, software, and basic
-            networking, ensuring you have a well-rounded understanding of IT
-            essentials. Together, these courses provide a holistic approach to
-            networking, preparing you for diverse roles in the IT industry. Join
-            us to start your journey toward becoming a skilled networking
-            professional.
-          </Typography>
-          <Typography className={styles.coursePrice}>
-            Fee: $400 per month (6 months) = Total $2400
-          </Typography>
-          <Typography className={styles.coursePrice}>
-            Anyone can join, no prerequisites.
-          </Typography>
+
           <Typography className={styles.heading}>
             Admission Requirements:
           </Typography>
