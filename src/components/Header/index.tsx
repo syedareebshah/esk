@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Typography, Box, Stack, useMediaQuery } from "@mui/material";
+import { Typography, Box, Stack, useMediaQuery, Button } from "@mui/material";
 import Image from "next/image";
 import logo from "../../../public/logo.jpeg";
 import styles from "./styles.module.css";
@@ -36,9 +36,10 @@ const Header = () => {
         </Link>
         <Stack
           sx={{
-            width: "50%",
+            width: "65%",
           }}
           direction={"row"}
+          alignItems={"center"}
           justifyContent={"space-between"}
         >
           <Link
@@ -105,6 +106,9 @@ const Header = () => {
           >
             <p className={styles.headerText}>Contact</p>
           </Link>
+          <Button href={"/Apply"} variant="contained">
+            Apply Now
+          </Button>
         </Stack>
       </Stack>
     </div>
