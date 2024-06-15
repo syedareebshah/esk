@@ -20,7 +20,7 @@ const ApplyPage = () => {
             lineHeight: "1.7",
           }}
         >
-          Everest IT Training
+          ESK IT Training
         </Typography>
         <Typography
           paddingBottom={2}
