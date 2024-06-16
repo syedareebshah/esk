@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ESK IT",
+  title: "ESK IT | Become an IT Professional",
   description:
     "ESK IT - No IT background or college degree required, change your career into: You will be able to apply for the following jobs after training.",
 };
