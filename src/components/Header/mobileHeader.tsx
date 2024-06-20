@@ -117,7 +117,6 @@ const MobileHeader = () => {
         sx={{
           maxWidth: "1135px",
           margin: "0px auto",
-          paddingRight: "25px",
         }}
       >
         <Image
@@ -130,15 +129,33 @@ const MobileHeader = () => {
           }}
         />
 
-        <MenuSharpIcon
-          sx={{
-            fontSize: "34px",
-          }}
-          onClick={toggleDrawer(true)}
-        />
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-          {DrawerList}
-        </Drawer>
+        <Stack
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
+          <Button
+            sx={{
+              backgroundColor: "green",
+              boxShadow: "none",
+              textWrap: "nowrap",
+            }}
+            size="small"
+            href={"/Apply"}
+            variant="contained"
+          >
+            Apply Now
+          </Button>
+          <MenuSharpIcon
+            sx={{
+              fontSize: "34px",
+            }}
+            onClick={toggleDrawer(true)}
+          />
+          <Drawer open={open} onClose={toggleDrawer(false)}>
+            {DrawerList}
+          </Drawer>
+        </Stack>
       </Stack>
     </div>
   );

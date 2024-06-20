@@ -106,7 +106,14 @@ const Header = () => {
           >
             <p className={styles.headerText}>Contact</p>
           </Link>
-          <Button href={"/Apply"} variant="contained">
+          <Button
+            sx={{
+              backgroundColor: "green",
+              boxShadow: "none",
+            }}
+            href={"/Apply"}
+            variant="contained"
+          >
             Apply Now
           </Button>
         </Stack>

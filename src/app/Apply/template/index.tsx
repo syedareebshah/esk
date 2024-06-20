@@ -61,6 +61,7 @@ const ApplyPage = () => {
                 color: "white",
                 padding: "20px 10px",
               }}
+              className={styles.card}
             >
               <Typography
                 sx={{
@@ -99,6 +100,7 @@ const ApplyPage = () => {
                 color: "white",
                 padding: "20px 10px",
               }}
+              className={styles.card}
             >
               <Typography
                 sx={{
@@ -137,6 +139,7 @@ const ApplyPage = () => {
                 color: "white",
                 padding: "20px 10px",
               }}
+              className={styles.card}
             >
               <Typography
                 sx={{
@@ -175,6 +178,7 @@ const ApplyPage = () => {
                 color: "white",
                 padding: "20px 10px",
               }}
+              className={styles.card}
             >
               <Typography
                 sx={{
@@ -213,6 +217,7 @@ const ApplyPage = () => {
                 color: "white",
                 padding: "20px 10px",
               }}
+              className={styles.card}
             >
               <Typography
                 sx={{
